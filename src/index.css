@@ -36,6 +36,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: #fff;
 }
 
 ul[class],
@@ -69,4 +70,9 @@ select {
   font-family: 'Open-Sans';
   src: url('../src/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth_wght.woff')
     format('woff');
+}
+
+@font-face {
+  font-family: 'Monaco';
+  src: url('../src/assets/fonts/Monaco//Monaco.woff') format('woff');
 }

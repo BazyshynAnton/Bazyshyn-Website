@@ -1,7 +1,8 @@
 .introductorySectionContainer {
   height: 700px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .insideIntroductorySectionContainer {
@@ -16,10 +17,13 @@
   width: 300px;
 }
 
-/* Text Block */
+/* TextBlock.jsx */
 
 .quickLinksContainer {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .svgStylesTwo {
@@ -50,9 +54,20 @@
   display: inline-block;
   background: #16a085;
   margin-left: 5px;
-  -webkit-animation: blink 0.8s infinite;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
   width: 10px;
-  height: 27px;
+  /* height: 27px; */
+}
+
+.notBlinkingCursor {
+  position: relative;
+  bottom: -3px;
+  display: inline-block;
+  background: #16a085;
+  margin-left: 5px;
+  width: 10px;
+  /* height: 27px; */
 }
 
 @-webkit-keyframes blink {
@@ -65,4 +80,27 @@
   100% {
     background: none;
   }
+}
+
+/* TechStack.jsx */
+
+.techStackContainer {
+  display: flex;
+  align-items: center;
+}
+
+.techStackContainer p {
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  color: #2d2e32;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  margin-right: 2rem;
+}
+
+.techStackContainer img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  cursor: pointer;
 }

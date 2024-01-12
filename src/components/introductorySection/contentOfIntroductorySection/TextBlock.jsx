@@ -1,21 +1,19 @@
-import Typed from 'react-typed'
-
 import { FiGithub } from 'react-icons/fi'
 import { TbBrandLinkedin } from 'react-icons/tb'
 
 import styles from '../IntroductorySection.module.css'
+import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
 
 const TextBlock = () => {
   return (
-    <div style={{ maxWidth: '100%', padding: '0px 20px' }}>
+    <div style={{ maxWidth: '100%' }}>
       <h1 style={{ color: '#2d2e32', fontSize: '2rem' }}>
-        <span style={{ color: '#16a085' }}>{'➜  ~'}</span>{' '}
-        <Typed
-          strings={['Front-End React Developer']}
-          typeSpeed={40}
-          showCursor={false}
+        <TerminalTextBlock
+          text={'Front-End React Developer'}
+          height={'27px'}
+          time={1600}
+          speed={40}
         />
-        <span className={styles.cursor} />
       </h1>
 
       <p>

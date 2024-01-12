@@ -1,0 +1,34 @@
+/* PictureAboutMyself.jsx */
+.aboutMyselfContainer {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.picrureBlock {
+  min-width: 350px;
+}
+.picrureBlock img {
+  width: 350px;
+}
+
+/* TextInAboutBlock.jsx */
+
+.containerText {
+  width: 100%;
+  padding: 20px 40px 0px 40px;
+}
+
+.containerText h3 {
+  font-size: 1.2rem;
+  color: #147efb;
+}
+.containerText {
+  color: #767676;
+}
+
+.containerText h4 {
+  padding-top: 10px;
+  font-size: 1.5rem;
+  color: #2d2e32;
+}
