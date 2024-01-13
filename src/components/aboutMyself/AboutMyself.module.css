@@ -2,7 +2,7 @@
 .aboutMyselfContainer {
   display: flex;
   align-items: flex-start;
-  cursor: pointer;
+  cursor: default;
 }
 
 .picrureBlock {
@@ -22,6 +22,7 @@
 .containerText h3 {
   font-size: 1.2rem;
   color: #147efb;
+  cursor: pointer;
 }
 .containerText {
   color: #767676;

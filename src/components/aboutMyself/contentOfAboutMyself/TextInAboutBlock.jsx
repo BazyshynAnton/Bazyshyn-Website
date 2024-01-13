@@ -4,17 +4,9 @@ import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock
 
 import styles from '../AboutMyself.module.css'
 
-const stylesForHint1 = {
-  fontFamily: 'Monaco',
+const stylesForHint = {
   fontStyle: 'italic',
-  color: '#b1b1b1',
-  fontSize: '1.3rem',
-}
-const stylesForHint2 = {
-  fontFamily: 'Monaco',
-  fontStyle: 'italic',
-  color: '#b1b1b1',
-  fontSize: '14px',
+  color: '#4e505c',
 }
 
 const TextInAboutBlock = () => {
@@ -67,11 +59,11 @@ const TextInAboutBlock = () => {
           </h3>
           {hint ? (
             <>
-              <h4 style={stylesForHint1}>
+              <h4 style={stylesForHint}>
                 A React Front-end Developer with great enthusiasm from
                 Balakliya, Ukraine.
               </h4>
-              <p style={stylesForHint2}>
+              <p style={stylesForHint}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
                 voluptatum repudiandae libero qui eligendi quod doloremque
                 voluptatibus hic labore ipsum, laudantium similique facere

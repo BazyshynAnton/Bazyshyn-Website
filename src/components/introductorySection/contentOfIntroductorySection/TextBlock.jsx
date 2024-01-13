@@ -1,3 +1,4 @@
+import { useEffect, useState } from '../../shared/utils/reactImports'
 import { FiGithub } from 'react-icons/fi'
 import { TbBrandLinkedin } from 'react-icons/tb'
 
@@ -5,6 +6,14 @@ import styles from '../IntroductorySection.module.css'
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
 
 const TextBlock = () => {
+  const [hint, setHint] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHint(false)
+    }, 1700)
+  }, [hint])
+
   return (
     <div style={{ maxWidth: '100%' }}>
       <h1 style={{ color: '#2d2e32', fontSize: '2rem' }}>
@@ -16,10 +25,22 @@ const TextBlock = () => {
         />
       </h1>
 
-      <p>
-        Hi, I'm Anton Bazyshyn. A React Front-end Developer with
-        <br /> great enthusiasm from Balakliya, Ukraine.
-      </p>
+      {hint ? (
+        <p
+          style={{
+            fontStyle: 'italic',
+            color: '#4e505c',
+          }}
+        >
+          Hi, I'm Anton Bazyshyn. A React Front-end Developer with
+          <br /> great enthusiasm from Balakliya, Ukraine.
+        </p>
+      ) : (
+        <p>
+          Hi, I'm Anton Bazyshyn. A React Front-end Developer with
+          <br /> great enthusiasm from Balakliya, Ukraine.
+        </p>
+      )}
       <div className={styles.quickLinksContainer}>
         <FiGithub className={styles.svgStylesOne} />
         <TbBrandLinkedin className={styles.svgStylesTwo} />
