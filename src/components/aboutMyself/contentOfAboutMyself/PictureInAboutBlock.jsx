@@ -5,7 +5,7 @@ import styles from '../AboutMyself.module.css'
 
 const PictureInAboutBlock = ({ isHover }) => {
   return (
-    <div className={styles.picrureBlock}>
+    <div className={styles.pictureBlock}>
       {isHover ? (
         <img src={helloWorld02} alt="computer" />
       ) : (

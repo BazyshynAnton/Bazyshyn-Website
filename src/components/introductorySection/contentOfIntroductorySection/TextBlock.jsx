@@ -1,6 +1,5 @@
 import { useEffect, useState } from '../../shared/utils/reactImports'
-import { FiGithub } from 'react-icons/fi'
-import { TbBrandLinkedin } from 'react-icons/tb'
+import { FiGithub, TbBrandLinkedin } from '../../shared/iconImports/iconImports'
 
 import styles from '../IntroductorySection.module.css'
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'

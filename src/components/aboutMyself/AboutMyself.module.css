@@ -1,14 +1,15 @@
-/* PictureAboutMyself.jsx */
+/* PictureInAboutMyself.jsx */
 .aboutMyselfContainer {
   display: flex;
   align-items: flex-start;
   cursor: default;
+  padding: 5rem 0;
 }
 
-.picrureBlock {
+.pictureBlock {
   min-width: 350px;
 }
-.picrureBlock img {
+.pictureBlock img {
   width: 350px;
 }
 

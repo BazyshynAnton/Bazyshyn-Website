@@ -68,7 +68,7 @@ select {
 
 @font-face {
   font-family: 'Open-Sans';
-  src: url('../src/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth_wght.woff')
+  src: url('../src/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf')
     format('woff');
 }
 

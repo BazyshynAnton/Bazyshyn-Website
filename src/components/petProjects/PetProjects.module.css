@@ -1,0 +1,91 @@
+.containerOfProjects {
+  padding: 5rem 0;
+}
+
+.projectContainerBlockLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectContainerBlockRight {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8rem;
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pictureContainer {
+  width: 25rem;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pictureContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+}
+
+.textContainer h4 {
+  align-items: center;
+  color: #2d2e32;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.textContainer span {
+  color: #151313c5;
+  font-size: 0.9rem;
+}
+
+.projectLinksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.projectLinksContainer a {
+  color: #2d2e32;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projectLinksContainer a:hover {
+  color: #16a085;
+}
+
+.projectLinksContainer svg {
+  font-size: 1.5rem;
+}
