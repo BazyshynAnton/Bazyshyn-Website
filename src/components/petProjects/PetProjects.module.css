@@ -2,7 +2,8 @@
   padding: 5rem 0;
 }
 
-.projectContainerBlockLeft {
+.projectContainerBlockLeft,
+.projectContainerBlockRight {
   display: flex;
   flex-direction: row;
   gap: 8rem;
@@ -12,31 +13,43 @@
   padding: 2rem;
   border-radius: 1.1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .projectContainerBlockRight {
-  display: flex;
+  /* display: flex; */
   flex-direction: row-reverse;
-  gap: 8rem;
+  /* gap: 8rem;
   width: 100%;
   height: 25rem;
   margin-bottom: 2rem;
   padding: 2rem;
   border-radius: 1.1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-.pictureContainer {
+.pictureContainerOne,
+.pictureContainerTwo {
   width: 25rem;
   height: auto;
   overflow: hidden;
   border-radius: 1.1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.pictureContainer img {
+.pictureContainerOne img,
+.pictureContainerTwo img {
   width: 100%;
   height: auto;
+  transition: transform 3s ease-in-out;
+}
+
+.pictureContainerOne:hover img {
+  transform: translateY(-34%);
+}
+.pictureContainerTwo:hover img {
+  transform: translateY(-62%);
 }
 
 .textContainer {
@@ -88,4 +101,23 @@
 
 .projectLinksContainer svg {
   font-size: 1.5rem;
+}
+
+/* NameSection.jsx */
+
+.containerOfNameSection {
+  padding: 0rem 0rem 3em 0rem;
+}
+
+.containerOfNameSection h3 {
+  color: #147efb;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.containerOfNameSection p {
+  color: #2d2e32;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: default;
 }

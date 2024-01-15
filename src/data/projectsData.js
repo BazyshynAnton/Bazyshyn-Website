@@ -17,7 +17,7 @@ export const projects = [
       .toUpperCase(),
     pictureOfProject: JDMarket,
     textOverview:
-      'Explore, compare, and secure your dream Japanese sports car effortlessly on my site. Your direct path to high-performance automotive excellence.',
+      'Explore, compare, and secure your dream Japanese sports car effortlessly on JDMarket. Your direct path to high-performance automotive excellence.',
     firstTech: 'React',
     secondTech: 'SCSS',
     linkToCode: 'https://github.com/BazyshynAnton/JDM',

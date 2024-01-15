@@ -31,8 +31,16 @@ const ReusableProject = ({
           : styles.projectContainerBlockRight
       }
     >
-      <div className={styles.pictureContainer}>
-        <img src={pictureOfProject} alt="project" />
+      <div
+        className={
+          projectName === 'JDMarket'
+            ? styles.pictureContainerOne
+            : styles.pictureContainerTwo
+        }
+      >
+        <a href={projectDemo} target="_blank" rel="noreferrer">
+          <img src={pictureOfProject} alt="project" />
+        </a>
       </div>
 
       <div className={styles.textContainer}>

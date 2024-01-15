@@ -1,0 +1,16 @@
+.containerContactText {
+  padding: 5rem 0;
+}
+
+.containerContactText h3 {
+  color: #147efb;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.containerContactText p {
+  color: #2d2e32;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: default;
+}

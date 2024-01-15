@@ -16,13 +16,15 @@ const AboutMyself = () => {
   }
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={styles.aboutMyselfContainer}
-    >
-      <PictureInAboutBlock isHover={isHover} />
-      <TextInAboutBlock />
+    <div className="my-container">
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={styles.aboutMyselfContainer}
+      >
+        <PictureInAboutBlock isHover={isHover} />
+        <TextInAboutBlock />
+      </div>
     </div>
   )
 }
