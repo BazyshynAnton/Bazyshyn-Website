@@ -1,5 +1,10 @@
-.containerContactText {
+.containerOfContact {
   padding: 5rem 0;
+}
+
+/* ContactText.jsx */
+.containerContactText {
+  padding-bottom: 5rem;
 }
 
 .containerContactText h3 {
@@ -13,4 +18,59 @@
   font-size: 1.2rem;
   font-weight: 700;
   cursor: default;
+}
+
+/* EmailMessage.jsx */
+.formEmail {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+}
+
+.nameEmailBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameEmailBlock div {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameEmailBlock input {
+  width: 240px;
+  height: 40px;
+  padding: 0px 10px;
+  border: 2px solid #2d2e32;
+  border-radius: 4px;
+  user-select: none;
+  outline: none;
+}
+
+.formEmail textarea {
+  padding: 10px 10px;
+  height: 150px;
+  border: 2px solid #2d2e32;
+  border-radius: 4px;
+  user-select: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+.buttonSubmit {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 4px;
+  border: 2px solid #2d2e32;
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.buttonLoading {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 4px;
+  border: 2px solid #2d2e32;
+  cursor: pointer;
+  background-color: #efefef;
 }

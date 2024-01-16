@@ -1,6 +1,6 @@
 import { useEffect, useState } from '../utils/reactImports'
 
-import Typed from 'react-typed'
+import { TypeAnimation } from 'react-type-animation'
 
 import styles from '../../introductorySection/IntroductorySection.module.css'
 
@@ -18,7 +18,12 @@ const TerminalTextBlock = ({ text, height, time, speed }) => {
   return (
     <>
       <span style={{ color: '#16a085' }}>{'➜  ~'}</span>{' '}
-      <Typed strings={[text]} typeSpeed={speed} showCursor={false} />
+      <TypeAnimation
+        key={text}
+        sequence={[text]}
+        speed={speed}
+        cursor={false}
+      />
       {isBlinkingCursor ? (
         <span style={{ height: height }} className={styles.cursor} />
       ) : (
