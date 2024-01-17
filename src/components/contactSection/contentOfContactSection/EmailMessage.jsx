@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from '../../shared/utils/reactImports'
+import { useRef } from 'react'
+
 import emailjs from '@emailjs/browser'
 
 import styles from '../ContactSection.module.css'

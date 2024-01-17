@@ -1,0 +1,46 @@
+.containerFooter {
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usefulLinks {
+  display: flex;
+  gap: 3rem;
+}
+.usefulLinks ul {
+  padding: 0;
+  margin: 0;
+}
+.usefulLinks ul li {
+  color: #fff;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.usefulLinks ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.usefulLinks ul li a svg {
+  font-size: 1.5rem;
+}
+
+.usefulLinks ul li a svg,
+.usefulLinks ul li a p {
+  transition: all 0.1s ease-in-out;
+}
+
+.usefulLinks ul li a:hover svg,
+.usefulLinks ul li a:hover p {
+  color: #147efb;
+}

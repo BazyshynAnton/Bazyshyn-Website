@@ -4,7 +4,7 @@
 
 /* ContactText.jsx */
 .containerContactText {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .containerContactText h3 {
@@ -30,11 +30,16 @@
 .nameEmailBlock {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .nameEmailBlock div {
   display: flex;
   flex-direction: column;
+}
+.formEmail label {
+  font-size: 1.1rem;
+  color: #2d2e32;
 }
 
 .nameEmailBlock input {
@@ -73,4 +78,49 @@
   border: 2px solid #2d2e32;
   cursor: pointer;
   background-color: #efefef;
+}
+
+/*LinksToContacts.jsx */
+
+.linksToContactsContainer {
+  display: flex;
+  gap: 5rem;
+  padding-bottom: 3rem;
+}
+
+.myLocation,
+.myMail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.myLocation h3,
+.myMail h3 {
+  font-size: 1.2rem;
+  color: #2d2e32;
+}
+.myLocation p,
+.myMail a {
+  font-size: 1rem;
+  color: #767676;
+  transition: all 0.1s ease-in-out;
+}
+
+.myLocation:hover p,
+.myMail:hover a {
+  color: #147efb;
+}
+
+.showFormButton {
+  display: inline-block;
+  color: #147efb;
+  transition: all 0.1s ease-in-out;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.showFormButton:hover {
+  text-decoration: none;
 }
