@@ -30,7 +30,9 @@ html,
 body {
   font-family: 'Open-Sans';
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
   scroll-behavior: smooth;

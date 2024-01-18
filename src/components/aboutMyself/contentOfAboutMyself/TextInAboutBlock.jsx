@@ -9,38 +9,7 @@ const stylesForHint = {
   color: '#4e505c',
 }
 
-const TextInAboutBlock = () => {
-  const [hint, setHint] = useState(true)
-  const [showAnimation, setShowAnimation] = useState(false)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setHint(false)
-    }, 900)
-  }, [hint])
-
-  const [hasScrolled, setHasScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById('animation-div')
-      const position = element.getBoundingClientRect().top
-      const scrollPosition = window.scrollY
-
-      if (!hasScrolled && scrollPosition >= position) {
-        setShowAnimation(true)
-        setHint(true)
-        setHasScrolled(true)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [hasScrolled])
-
+const TextInAboutBlock = ({ hint, showAnimation }) => {
   return (
     <div className={styles.containerText} id="animation-div">
       {!showAnimation ? (
@@ -64,14 +33,11 @@ const TextInAboutBlock = () => {
                 Balakliya, Ukraine.
               </h4>
               <p style={stylesForHint}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-                voluptatum repudiandae libero qui eligendi quod doloremque
-                voluptatibus hic labore ipsum, laudantium similique facere
-                fugiat iusto distinctio ea porro quas animi. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Beatae, officiis
-                deserunt, eveniet omnis illum fugit asperiores pariatur unde ex
-                ipsa accusantium quisquam? Aliquam consectetur quaerat facere
-                quia aliquid, officia asperiores?
+                I present myself as an ambitious front-end developer ready to
+                contribute to your projects.
+                <br />I am prepared to contribute to your team, where
+                professionalism, collaborative work, and a commitment to
+                high-quality results are valued.
               </p>
             </>
           ) : (
@@ -80,15 +46,12 @@ const TextInAboutBlock = () => {
                 A React Front-end Developer with great enthusiasm from
                 Balakliya, Ukraine.
               </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-                voluptatum repudiandae libero qui eligendi quod doloremque
-                voluptatibus hic labore ipsum, laudantium similique facere
-                fugiat iusto distinctio ea porro quas animi. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Beatae, officiis
-                deserunt, eveniet omnis illum fugit asperiores pariatur unde ex
-                ipsa accusantium quisquam? Aliquam consectetur quaerat facere
-                quia aliquid, officia asperiores?
+              <p id="digital-minimalist">
+                I present myself as an ambitious front-end developer ready to
+                contribute to your projects.
+                <br />I am prepared to contribute to your team, where
+                professionalism, collaborative work, and a commitment to
+                high-quality results are valued.
               </p>
             </>
           )}

@@ -14,7 +14,7 @@ const ContactSection = () => {
 
   return (
     <div className="my-container">
-      <div className={styles.containerOfContact}>
+      <div className={styles.containerOfContact} id="contact">
         <ContactText />
         <LinksToContacts showForm={showForm} handleShowForm={handleShowForm} />
         {showForm && <EmailMessage />}

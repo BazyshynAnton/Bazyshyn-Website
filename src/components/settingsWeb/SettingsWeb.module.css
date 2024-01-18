@@ -1,0 +1,16 @@
+.settingsBlock {
+  background: #fff;
+  bottom: -30px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  left: -30px;
+  padding-top: 4px;
+  position: fixed;
+  transform: rotate(45deg);
+  width: 60px;
+  z-index: 9999;
+}

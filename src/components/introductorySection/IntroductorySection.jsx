@@ -6,7 +6,7 @@ import styles from './IntroductorySection.module.css'
 
 const IntroductorySection = () => {
   return (
-    <div style={{ background: '#f9f9f9' }}>
+    <div style={{ background: '#f9f9f9' }} id="home">
       <div className="my-container">
         <div
           style={{

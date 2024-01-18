@@ -4,7 +4,7 @@ import { FiGithub, TbBrandLinkedin } from '../shared/iconImports/iconImports'
 
 import styles from './Footer.module.css'
 
-const Footer = () => {
+const Footer = ({ setOpen }) => {
   const DATE = new Date().getFullYear()
   return (
     <div style={{ background: '#2d2e32', color: '#fff' }}>
@@ -27,9 +27,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="" rel="noreferrer" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/anton-bazishin-9444712ab/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <TbBrandLinkedin />
-                  <p> linkedin</p>
+                  <p>linkedin</p>
                 </a>
               </li>
             </ul>
@@ -44,7 +48,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="" rel="noreferrer" target="_blank">
+                <a href="#digital-minimalist" onClick={() => setOpen(true)}>
                   <GiBrain />
                   <p>digital minimalist</p>
                 </a>

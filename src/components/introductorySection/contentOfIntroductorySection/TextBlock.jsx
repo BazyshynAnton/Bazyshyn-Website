@@ -41,8 +41,20 @@ const TextBlock = () => {
         </p>
       )}
       <div className={styles.quickLinksContainer}>
-        <FiGithub className={styles.svgStylesOne} />
-        <TbBrandLinkedin className={styles.svgStylesTwo} />
+        <a
+          href="https://github.com/BazyshynAnton"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FiGithub className={styles.svgStylesOne} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/anton-bazishin-9444712ab/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <TbBrandLinkedin className={styles.svgStylesTwo} />
+        </a>
       </div>
     </div>
   )
