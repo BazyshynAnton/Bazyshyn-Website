@@ -122,3 +122,69 @@
   font-weight: 700;
   cursor: default;
 }
+
+@media (max-width: 1005px) {
+  .projectContainerBlockLeft,
+  .projectContainerBlockRight {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .pictureContainerOne,
+  .pictureContainerTwo {
+    width: 20rem;
+    height: 16.7rem;
+    overflow: hidden;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .containerOfNameSection {
+    padding: 0rem 0rem 10rem 0rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .containerOfNameSection {
+    height: auto;
+    padding: 0rem 0rem 3rem 0rem;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer h4 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .pictureContainerOne,
+  .pictureContainerTwo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .pictureContainerOne img,
+  .pictureContainerTwo img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    transition: transform 3s ease-in-out;
+  }
+
+  .pictureContainerOne:hover img {
+    transform: translateY(0%);
+  }
+  .pictureContainerTwo:hover img {
+    transform: translateY(0%);
+  }
+}

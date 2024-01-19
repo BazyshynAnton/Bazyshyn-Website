@@ -1,10 +1,12 @@
 import { useEffect, useState } from '../utils/reactImports'
+import { useSettingsContext } from '../../../context/SettingsContext'
 
 import { TypeAnimation } from 'react-type-animation'
 
 import styles from '../../introductorySection/IntroductorySection.module.css'
 
 const TerminalTextBlock = ({ text, height, time, speed }) => {
+  const { blinking } = useSettingsContext()
   const [isBlinkingCursor, setIsBlinkingCursor] = useState(false)
 
   const changeCursor = () => {
@@ -25,7 +27,10 @@ const TerminalTextBlock = ({ text, height, time, speed }) => {
         cursor={false}
       />
       {isBlinkingCursor ? (
-        <span style={{ height: height }} className={styles.cursor} />
+        <span
+          style={{ height: height }}
+          className={blinking ? styles.cursor : styles.notBlinkingCursor}
+        />
       ) : (
         <span style={{ height: height }} className={styles.notBlinkingCursor} />
       )}

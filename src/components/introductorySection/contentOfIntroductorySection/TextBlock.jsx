@@ -3,8 +3,10 @@ import { FiGithub, TbBrandLinkedin } from '../../shared/iconImports/iconImports'
 
 import styles from '../IntroductorySection.module.css'
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
+import { useSettingsContext } from '../../../context/SettingsContext'
 
 const TextBlock = () => {
+  const { isSmallScreen } = useSettingsContext()
   const [hint, setHint] = useState(true)
 
   useEffect(() => {
@@ -14,32 +16,46 @@ const TextBlock = () => {
   }, [hint])
 
   return (
-    <div style={{ maxWidth: '100%' }}>
-      <h1 style={{ color: '#2d2e32', fontSize: '2rem' }}>
-        <TerminalTextBlock
-          text={'Front-End React Developer'}
-          height={'27px'}
-          time={1600}
-          speed={40}
-        />
-      </h1>
+    <div className={styles.textBlockContainer}>
+      {isSmallScreen ? (
+        <h1>
+          <TerminalTextBlock
+            text={'Front-End React Developer'}
+            height={'27px'}
+            time={1600}
+            speed={40}
+          />
+        </h1>
+      ) : (
+        <h1>Front-End React Developer 👋🏻</h1>
+      )}
 
-      {hint ? (
-        <p
-          style={{
-            fontStyle: 'italic',
-            color: '#4e505c',
-          }}
-        >
-          Hi, I'm Anton Bazyshyn. A React Front-end Developer with
-          <br /> great enthusiasm from Balakliya, Ukraine.
-        </p>
+      {isSmallScreen ? (
+        <>
+          {hint ? (
+            <p
+              style={{
+                fontStyle: 'italic',
+                color: '#4e505c',
+              }}
+            >
+              Hi, I'm Anton Bazyshyn. A React Front-end Developer with
+              <br /> great enthusiasm from Balakliya, Ukraine.
+            </p>
+          ) : (
+            <p>
+              Hi, I'm Anton Bazyshyn. A React Front-end Developer with
+              <br /> great enthusiasm from Balakliya, Ukraine.
+            </p>
+          )}{' '}
+        </>
       ) : (
         <p>
-          Hi, I'm Anton Bazyshyn. A React Front-end Developer with
-          <br /> great enthusiasm from Balakliya, Ukraine.
+          Hi, I'm Anton Bazyshyn. A React Front-end Developer with great
+          enthusiasm from Balakliya, Ukraine.
         </p>
       )}
+
       <div className={styles.quickLinksContainer}>
         <a
           href="https://github.com/BazyshynAnton"
@@ -49,7 +65,7 @@ const TextBlock = () => {
           <FiGithub className={styles.svgStylesOne} />
         </a>
         <a
-          href="https://www.linkedin.com/in/anton-bazishin-9444712ab/"
+          href="https://www.linkedin.com/in/anton-bazyshyn-dev/"
           target="_blank"
           rel="noreferrer"
         >

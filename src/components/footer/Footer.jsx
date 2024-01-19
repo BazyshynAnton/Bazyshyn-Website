@@ -28,7 +28,7 @@ const Footer = ({ setOpen }) => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/anton-bazishin-9444712ab/"
+                  href="https://www.linkedin.com/in/anton-bazyshyn-dev/"
                   rel="noreferrer"
                   target="_blank"
                 >

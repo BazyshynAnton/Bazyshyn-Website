@@ -1,14 +1,22 @@
-import Swal from 'sweetalert2'
-
+import { useSettingsContext } from '../../context/SettingsContext'
 import { IoSettingsSharp } from 'react-icons/io5'
 
 import styles from './SettingsWeb.module.css'
 
 const SettingsWeb = () => {
+  const { settings, setSettings, isSmallScreen } = useSettingsContext()
+
   return (
-    <div className={styles.settingsBlock}>
-      <IoSettingsSharp />
-    </div>
+    <>
+      {isSmallScreen && (
+        <div
+          className={styles.settingsBlock}
+          onClick={() => setSettings(!settings)}
+        >
+          <IoSettingsSharp />
+        </div>
+      )}
+    </>
   )
 }
 

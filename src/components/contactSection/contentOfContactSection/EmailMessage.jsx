@@ -12,7 +12,7 @@ const EmailMessage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-
+    setLoading(true)
     emailjs
       .sendForm(
         'service_l8kejw9',
@@ -23,12 +23,15 @@ const EmailMessage = () => {
       .then(
         (result) => {
           console.log(result.text)
+          setLoading(false)
         },
         (error) => {
           console.log(error.text)
+          setLoading(false)
         }
       )
   }
+
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.formEmail}>
       <div className={styles.nameEmailBlock}>
@@ -53,17 +56,7 @@ const EmailMessage = () => {
           </div>
         </button>
       ) : (
-        <input
-          onClick={() => {
-            setLoading(true)
-            setTimeout(() => {
-              setLoading(false)
-            }, 2000)
-          }}
-          className={styles.buttonSubmit}
-          type="submit"
-          value="Send"
-        />
+        <input className={styles.buttonSubmit} type="submit" value="Send" />
       )}
     </form>
   )

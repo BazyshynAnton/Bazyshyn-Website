@@ -12,18 +12,20 @@ const TechStack = () => {
   return (
     <div className={styles.techStackContainer}>
       <p>Tech Stack</p>
-      <img src={cssIcon} alt="css" title="CSS" />
-      <img src={htmlIcon} alt="html" title="HTML" />
-      <img src={jsIcon} alt="js" title="JavaScript" />
-      <img src={tsIcon} alt="ts" title="TypeScript" />
-      <img src={reactIcon} alt="react" title="React" />
-      <img
-        style={{ borderRadius: '10px' }}
-        src={muiIcon}
-        alt="mui"
-        title="Material UI"
-      />
-      <img src={sassIcon} alt="sass" title="SASS/SCSS" />
+      <div className={styles.iconsContainer}>
+        <img src={cssIcon} alt="css" title="CSS" />
+        <img src={htmlIcon} alt="html" title="HTML" />
+        <img src={jsIcon} alt="js" title="JavaScript" />
+        <img src={tsIcon} alt="ts" title="TypeScript" />
+        <img src={reactIcon} alt="react" title="React" />
+        <img
+          style={{ borderRadius: '10px' }}
+          src={muiIcon}
+          alt="mui"
+          title="Material UI"
+        />
+        <img src={sassIcon} alt="sass" title="SASS/SCSS" />
+      </div>
     </div>
   )
 }

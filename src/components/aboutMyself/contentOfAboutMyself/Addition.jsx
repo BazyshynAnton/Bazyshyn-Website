@@ -1,3 +1,4 @@
+import { useSettingsContext } from '../../../context/SettingsContext'
 import styles from '../AboutMyself.module.css'
 
 const stylesForHint = {
@@ -6,6 +7,7 @@ const stylesForHint = {
 }
 
 const Addition = ({ open, setOpen, hint }) => {
+  const { isSmallScreen } = useSettingsContext()
   return (
     <>
       {hint ? (
@@ -17,7 +19,13 @@ const Addition = ({ open, setOpen, hint }) => {
             alignItems: 'center',
           }}
         >
-          <aside style={stylesForHint}>read more</aside>
+          {isSmallScreen ? (
+            <aside style={stylesForHint}>read more</aside>
+          ) : (
+            <aside onClick={() => setOpen(!open)}>
+              {open ? 'hide text' : 'read more'}
+            </aside>
+          )}
         </div>
       ) : (
         <div

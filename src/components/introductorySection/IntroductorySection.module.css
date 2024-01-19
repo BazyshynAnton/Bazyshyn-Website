@@ -1,3 +1,11 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
 .introductorySectionContainer {
   height: 700px;
   display: flex;
@@ -19,6 +27,14 @@
 }
 
 /* TextBlock.jsx */
+.textBlockContainer {
+  max-width: 100%;
+}
+
+.textBlockContainer h1 {
+  color: #2d2e32;
+  font-size: 2rem;
+}
 
 .quickLinksContainer {
   margin-top: 20px;
@@ -89,6 +105,11 @@
   display: flex;
   align-items: center;
 }
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .techStackContainer p {
   border-right: 2px solid rgba(45, 46, 50, 0.5);
@@ -99,9 +120,73 @@
   margin-right: 2rem;
 }
 
-.techStackContainer img {
+.iconsContainer img {
   width: 45px;
   height: 45px;
-  margin-right: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 915px) {
+  .mainContainer {
+    height: auto;
+  }
+  .introductorySectionContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+
+  .insideIntroductorySectionContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .pictureBlockContainer {
+    padding: 0px 0px 0px 0px;
+    width: 200px;
+  }
+  .textBlockContainer h1 {
+    color: #2d2e32;
+    font-size: 1.5rem;
+  }
+  .textBlockContainer *:not(h1) {
+    text-align: center;
+  }
+  .textBlockContainer p {
+    font-size: 0.9rem;
+  }
+
+  .quickLinksContainer {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .techStackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 6rem;
+  }
+  .techStackContainer p {
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    border-right: none;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textBlockContainer {
+    text-align: center;
+  }
 }

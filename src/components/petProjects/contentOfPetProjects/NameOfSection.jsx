@@ -2,6 +2,7 @@ import { useEffect, useState } from '../../shared/utils/reactImports'
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
 
 import styles from '../PetProjects.module.css'
+import { useSettingsContext } from '../../../context/SettingsContext'
 
 const stylesForHint = {
   fontStyle: 'italic',
@@ -9,6 +10,8 @@ const stylesForHint = {
 }
 
 const NameOfSection = () => {
+  const { isSmallScreen } = useSettingsContext()
+
   const [hint, setHint] = useState(true)
 
   useEffect(() => {
@@ -48,19 +51,32 @@ const NameOfSection = () => {
         </h3>
       ) : (
         <>
-          <h3>
-            <TerminalTextBlock
-              text={'PORTFOLIO'}
-              height={'22px'}
-              time={1000}
-              speed={50}
-            />
-          </h3>
-          {hint ? (
-            <p style={stylesForHint}>
-              Each project reflects my dedication to quality development and
-              effective solutions.
-            </p>
+          {isSmallScreen ? (
+            <h3>
+              <TerminalTextBlock
+                text={'PORTFOLIO'}
+                height={'22px'}
+                time={1000}
+                speed={50}
+              />
+            </h3>
+          ) : (
+            <h3>PORTFOLIO</h3>
+          )}
+          {isSmallScreen ? (
+            <>
+              {hint ? (
+                <p style={stylesForHint}>
+                  Each project reflects my dedication to quality development and
+                  effective solutions.
+                </p>
+              ) : (
+                <p>
+                  Each project reflects my dedication to quality development and
+                  effective solutions.
+                </p>
+              )}
+            </>
           ) : (
             <p>
               Each project reflects my dedication to quality development and

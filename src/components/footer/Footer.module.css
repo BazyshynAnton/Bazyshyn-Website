@@ -44,3 +44,19 @@
 .usefulLinks ul li a:hover p {
   color: #147efb;
 }
+
+@media (max-width: 720px) {
+  .containerFooter {
+    padding: 3rem 0rem 1rem 0rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 390px) {
+  .usefulLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
