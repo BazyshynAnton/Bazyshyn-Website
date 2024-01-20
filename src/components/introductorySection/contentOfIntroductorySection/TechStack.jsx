@@ -1,30 +1,59 @@
-import cssIcon from '../../../assets/pictures/icons/css.webp'
-import htmlIcon from '../../../assets/pictures/icons/html.webp'
-import jsIcon from '../../../assets/pictures/icons/js.webp'
-import tsIcon from '../../../assets/pictures/icons/ts.webp'
-import reactIcon from '../../../assets/pictures/icons/react.webp'
+import { LazyLoadImage } from '../../shared/utils/reactImports'
+
+import cssIcon from '../../../assets/pictures/icons/css.png'
+import htmlIcon from '../../../assets/pictures/icons/html.png'
+import jsIcon from '../../../assets/pictures/icons/js.png'
+import tsIcon from '../../../assets/pictures/icons/ts.png'
+import reactIcon from '../../../assets/pictures/icons/react.png'
 import muiIcon from '../../../assets/pictures/icons/mui.png'
-import sassIcon from '../../../assets/pictures/icons/sass.webp'
+import sassIcon from '../../../assets/pictures/icons/sass.png'
 
 import styles from '../IntroductorySection.module.css'
+
+const imgStyle = { borderRadius: '10px' }
 
 const TechStack = () => {
   return (
     <div className={styles.techStackContainer}>
       <p>Tech Stack</p>
       <div className={styles.iconsContainer}>
-        <img src={cssIcon} alt="css" title="CSS" />
-        <img src={htmlIcon} alt="html" title="HTML" />
-        <img src={jsIcon} alt="js" title="JavaScript" />
-        <img src={tsIcon} alt="ts" title="TypeScript" />
-        <img src={reactIcon} alt="react" title="React" />
-        <img
-          style={{ borderRadius: '10px' }}
+        <LazyLoadImage style={imgStyle} src={cssIcon} alt="css" title="CSS" />
+        <LazyLoadImage
+          style={imgStyle}
+          src={htmlIcon}
+          alt="html"
+          title="HTML"
+        />
+        <LazyLoadImage
+          style={imgStyle}
+          src={jsIcon}
+          alt="js"
+          title="JavaScript"
+        />
+        <LazyLoadImage
+          style={imgStyle}
+          src={tsIcon}
+          alt="ts"
+          title="TypeScript"
+        />
+        <LazyLoadImage
+          style={imgStyle}
+          src={reactIcon}
+          alt="react"
+          title="React"
+        />
+        <LazyLoadImage
+          style={imgStyle}
           src={muiIcon}
           alt="mui"
           title="Material UI"
         />
-        <img src={sassIcon} alt="sass" title="SASS/SCSS" />
+        <LazyLoadImage
+          style={imgStyle}
+          src={sassIcon}
+          alt="sass"
+          title="SASS/SCSS"
+        />
       </div>
     </div>
   )

@@ -1,8 +1,9 @@
 import { useEffect, useState } from '../../shared/utils/reactImports'
+import { useSettingsContext } from '../../../context/SettingsContext'
+
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
 
 import styles from '../PetProjects.module.css'
-import { useSettingsContext } from '../../../context/SettingsContext'
 
 const stylesForHint = {
   fontStyle: 'italic',
@@ -17,7 +18,7 @@ const NameOfSection = () => {
   useEffect(() => {
     setTimeout(() => {
       setHint(false)
-    }, 1000)
+    }, 900)
   }, [hint])
 
   const [showAnimation, setShowAnimation] = useState(false)
@@ -56,8 +57,8 @@ const NameOfSection = () => {
               <TerminalTextBlock
                 text={'PORTFOLIO'}
                 height={'22px'}
-                time={1000}
-                speed={50}
+                time={900}
+                speed={20}
               />
             </h3>
           ) : (

@@ -1,9 +1,10 @@
+import { useState } from '../shared/utils/reactImports'
+
 import ContactText from './contentOfContactSection/ContactText'
 
 import styles from './ContactSection.module.css'
-import EmailMessage from './contentOfContactSection/EmailMessage'
 import LinksToContacts from './contentOfContactSection/LinksToContacts'
-import { useState } from 'react'
+import EmailMessage from './contentOfContactSection/EmailMessage'
 
 const ContactSection = () => {
   const [showForm, setShowForm] = useState(false)

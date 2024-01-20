@@ -3,6 +3,8 @@ import {
   HiOutlineExternalLink,
 } from '../../shared/iconImports/iconImports'
 
+import { LazyLoadImage } from '../../shared/utils/reactImports'
+
 import styles from '../PetProjects.module.css'
 
 const technologyStyles = {
@@ -39,7 +41,7 @@ const ReusableProject = ({
         }
       >
         <a href={projectDemo} target="_blank" rel="noreferrer">
-          <img src={pictureOfProject} alt="project" />
+          <LazyLoadImage src={pictureOfProject} alt="project" />
         </a>
       </div>
 

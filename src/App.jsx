@@ -1,4 +1,8 @@
-import { useState } from './components/shared/utils/reactImports'
+import {
+  useState,
+  lazy,
+  Suspense,
+} from './components/shared/utils/reactImports'
 import { SettingsProvider } from './context/SettingsContext'
 
 import Header from './components/header/Header'
@@ -8,7 +12,10 @@ import Footer from './components/footer/Footer'
 import IntroductorySection from './components/introductorySection/IntroductorySection'
 import PetProjects from './components/petProjects/PetProjects'
 import SettingsWeb from './components/settingsWeb/SettingsWeb'
-import SettingsBlock from './components/settingsWeb/SettingsBlock'
+
+const SettingsBlock = lazy(() =>
+  import('./components/settingsWeb/SettingsBlock')
+)
 
 const App = () => {
   const [open, setOpen] = useState(false)
@@ -21,7 +28,9 @@ const App = () => {
       <ContactSection />
       <Footer setOpen={setOpen} />
       <SettingsWeb />
-      <SettingsBlock />
+      <Suspense>
+        <SettingsBlock />
+      </Suspense>
     </SettingsProvider>
   )
 }

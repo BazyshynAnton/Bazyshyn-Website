@@ -1,10 +1,15 @@
-import { useEffect, useState } from '../../shared/utils/reactImports'
-
-import HeaderForSmallScreen from '../contentOfHeader/HeaderForSmallScreen'
+import {
+  useEffect,
+  useState,
+  lazy,
+  Suspense,
+} from '../../shared/utils/reactImports'
 
 import { IoMenu } from 'react-icons/io5'
 
 import styles from '../Header.module.css'
+
+const HeaderForSmallScreen = lazy(() => import('./HeaderForSmallScreen'))
 
 const HeaderForBigScreen = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -57,7 +62,9 @@ const HeaderForBigScreen = () => {
       </div>
 
       {!isDesktop && (
-        <HeaderForSmallScreen isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Suspense>
+          <HeaderForSmallScreen isOpen={isOpen} setIsOpen={setIsOpen} />{' '}
+        </Suspense>
       )}
     </>
   )

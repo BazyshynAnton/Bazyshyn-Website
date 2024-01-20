@@ -1,9 +1,10 @@
 import { useEffect, useState } from '../../shared/utils/reactImports'
+import { useSettingsContext } from '../../../context/SettingsContext'
 import { FiGithub, TbBrandLinkedin } from '../../shared/iconImports/iconImports'
 
-import styles from '../IntroductorySection.module.css'
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
-import { useSettingsContext } from '../../../context/SettingsContext'
+
+import styles from '../IntroductorySection.module.css'
 
 const TextBlock = () => {
   const { isSmallScreen } = useSettingsContext()

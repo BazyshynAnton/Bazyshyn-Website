@@ -60,7 +60,7 @@
 }
 
 .smallScreenHeader div:first-child {
-  padding: 30px 30px;
+  padding: 25px 40px 25px 50px;
   width: 100%;
   display: flex;
   align-items: center;

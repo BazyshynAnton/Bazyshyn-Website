@@ -1,6 +1,7 @@
-import styles from './PetProjects.module.css'
-import AllProjects from './contentOfPetProjects/AllProjects'
 import NameOfSection from './contentOfPetProjects/NameOfSection'
+import AllProjects from './contentOfPetProjects/AllProjects'
+
+import styles from './PetProjects.module.css'
 
 const PetProjects = () => {
   return (

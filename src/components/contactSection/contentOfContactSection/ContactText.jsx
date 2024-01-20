@@ -1,4 +1,6 @@
 import { useEffect, useState } from '../../shared/utils/reactImports'
+import { useSettingsContext } from '../../../context/SettingsContext'
+
 import TerminalTextBlock from '../../shared/reusableComponents/TerminalTextBlock'
 
 import styles from '../ContactSection.module.css'
@@ -9,14 +11,9 @@ const stylesForHint = {
 }
 
 const ContactText = () => {
-  const [hint, setHint] = useState(true)
-  const [showAnimation, setShowAnimation] = useState(false)
+  const { isSmallScreen } = useSettingsContext()
 
-  useEffect(() => {
-    setTimeout(() => {
-      setHint(false)
-    }, 900)
-  }, [hint])
+  const [showAnimation, setShowAnimation] = useState(false)
 
   const [hasScrolled, setHasScrolled] = useState(false)
 
@@ -40,27 +37,48 @@ const ContactText = () => {
     }
   }, [hasScrolled])
 
+  const [hint, setHint] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHint(false)
+    }, 850)
+  }, [hint])
+
   return (
-    <div className={styles.containerContactText} id="animation-contact-text">
+    <div className={styles.containerContactText}>
       {!showAnimation ? (
         <h3>
           <TerminalTextBlock height={'22px'} text={''} />
         </h3>
       ) : (
         <>
-          <h3>
-            <TerminalTextBlock
-              text={'CONTACT'}
-              height={'22px'}
-              time={900}
-              speed={50}
-            />
-          </h3>
-          {hint ? (
-            <p style={stylesForHint}>
-              If your message were a variable, I would assign it the highest
-              value!
-            </p>
+          {isSmallScreen ? (
+            <h3>
+              <TerminalTextBlock
+                text={'CONTACT'}
+                height={'22px'}
+                time={850}
+                speed={20}
+              />
+            </h3>
+          ) : (
+            <h3>CONTACT</h3>
+          )}
+          {isSmallScreen ? (
+            <>
+              {hint ? (
+                <p style={stylesForHint}>
+                  If your message were a variable, I would assign it the highest
+                  value!
+                </p>
+              ) : (
+                <p>
+                  If your message were a variable, I would assign it the highest
+                  value!
+                </p>
+              )}
+            </>
           ) : (
             <p>
               If your message were a variable, I would assign it the highest

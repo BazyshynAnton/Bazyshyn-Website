@@ -44,7 +44,11 @@ const LinksToContacts = ({ handleShowForm, showForm }) => {
           </div>
         </div>
       </div>
-      <p onClick={handleShowForm} className={styles.showFormButton}>
+      <p
+        onClick={handleShowForm}
+        className={styles.showFormButton}
+        id="animation-contact-text"
+      >
         {!showForm ? 'show' : 'hide'} form
       </p>
     </div>

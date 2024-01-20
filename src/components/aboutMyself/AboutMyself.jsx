@@ -1,10 +1,16 @@
-import { useEffect, useState } from '../shared/utils/reactImports'
+import {
+  useEffect,
+  useState,
+  lazy,
+  Suspense,
+} from '../shared/utils/reactImports'
 
 import PictureInAboutBlock from './contentOfAboutMyself/PictureInAboutBlock'
 import TextInAboutBlock from './contentOfAboutMyself/TextInAboutBlock'
 
 import styles from './AboutMyself.module.css'
-import Addition from './contentOfAboutMyself/Addition'
+
+const Addition = lazy(() => import('./contentOfAboutMyself/Addition'))
 
 const AboutMyself = ({ open, setOpen }) => {
   const [isHover, setIsHover] = useState(false)
@@ -61,7 +67,9 @@ const AboutMyself = ({ open, setOpen }) => {
           <TextInAboutBlock hint={hint} showAnimation={showAnimation} />
         </div>
         {showAnimation && (
-          <Addition open={open} setOpen={setOpen} hint={hint} />
+          <Suspense>
+            <Addition open={open} setOpen={setOpen} hint={hint} />
+          </Suspense>
         )}
       </div>
     </div>

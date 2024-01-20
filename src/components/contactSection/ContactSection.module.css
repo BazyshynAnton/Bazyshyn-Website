@@ -4,6 +4,7 @@
 
 /* ContactText.jsx */
 .containerContactText {
+  height: 150px;
   padding-bottom: 3rem;
 }
 
@@ -93,7 +94,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  cursor: pointer;
 }
 
 .myLocation h3,
@@ -106,10 +106,11 @@
   font-size: 1rem;
   color: #767676;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
-.myLocation:hover p,
-.myMail:hover a {
+.myLocation p:hover,
+.myMail a:hover {
   color: #147efb;
 }
 
@@ -123,4 +124,35 @@
 
 .showFormButton:hover {
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .linksToContactsContainer {
+    flex-direction: column;
+  }
+  .myLocation,
+  .myMail {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .formEmail {
+    width: 100%;
+  }
+
+  .nameEmailBlock {
+    flex-direction: column;
+  }
+
+  .nameEmailBlock input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 528px) {
+  .containerContactText {
+    height: auto;
+  }
 }

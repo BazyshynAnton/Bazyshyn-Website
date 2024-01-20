@@ -1,7 +1,7 @@
+import { useEffect } from '../../shared/utils/reactImports'
 import { IoClose } from 'react-icons/io5'
 
 import styles from '../Header.module.css'
-import { useEffect } from 'react'
 
 const HeaderForSmallScreen = ({ setIsOpen, isOpen }) => {
   useEffect(() => {
