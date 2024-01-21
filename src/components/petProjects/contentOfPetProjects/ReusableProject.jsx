@@ -29,8 +29,8 @@ const ReusableProject = ({
   projectDemo,
   position,
 }) => {
-  const [openTech1, setOpenTech1] = useState(true)
-  const [openTech2, setOpenTech2] = useState(true)
+  const [openTech1, setOpenTech1] = useState(false)
+  const [openTech2, setOpenTech2] = useState(false)
 
   return (
     <div className={styles.openTech}>
@@ -39,15 +39,13 @@ const ReusableProject = ({
           position === 'left'
             ? styles.projectContainerBlockLeft
             : styles.projectContainerBlockRight
-        }
-      >
+        }>
         <div
           className={
             projectName === 'JDMarket'
               ? styles.pictureContainerOne
               : styles.pictureContainerTwo
-          }
-        >
+          }>
           <a href={projectDemo} target="_blank" rel="noreferrer">
             <LazyLoadImage src={pictureOfProject} alt="project" />
           </a>
@@ -65,8 +63,7 @@ const ReusableProject = ({
               justifyContent: 'center',
               marginTop: '1rem',
               gap: '1.2rem',
-            }}
-          >
+            }}>
             <p style={technologyStyles}>{firstTech}</p>
             <p style={technologyStyles}>{secondTech}</p>
           </div>
@@ -85,8 +82,7 @@ const ReusableProject = ({
           (openTech1 ? (
             <p
               className={styles.seeMoreBtn}
-              onClick={() => setOpenTech1(false)}
-            >
+              onClick={() => setOpenTech1(false)}>
               hide
             </p>
           ) : (
@@ -98,8 +94,7 @@ const ReusableProject = ({
           (openTech2 ? (
             <p
               className={styles.seeMoreBtn}
-              onClick={() => setOpenTech2(false)}
-            >
+              onClick={() => setOpenTech2(false)}>
               hide
             </p>
           ) : (
