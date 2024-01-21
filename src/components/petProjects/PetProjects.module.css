@@ -9,11 +9,25 @@
   gap: 8rem;
   width: 100%;
   height: 25rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 1.1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0rem;
+}
+
+.openTech {
   background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 1.1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seeMoreBtn {
+  color: #147efb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.seeMoreBtn:hover {
+  color: #147efb;
+  text-decoration: none;
 }
 
 .projectContainerBlockRight {
@@ -121,6 +135,20 @@
   font-size: 1.2rem;
   font-weight: 700;
   cursor: default;
+}
+
+/* ReusableTechLis.jsx */
+.technologyContainer {
+  width: 100%;
+  height: auto;
+}
+.technologyContainer ul {
+  margin-left: 2rem;
+  padding: 0;
+  list-style-type: disc;
+}
+.technologyContainer li {
+  color: #2d2e32;
 }
 
 @media (max-width: 1005px) {
