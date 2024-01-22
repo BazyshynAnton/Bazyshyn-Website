@@ -37,9 +37,9 @@ const LinksToContacts = ({ handleShowForm, showForm }) => {
             <h3>Mail</h3>
             <a
               style={{ textDecoration: 'none' }}
-              href="mailto:maybebazishin@gmail.com"
+              href="mailto:bazyshyn.anton@gmail.com"
             >
-              maybebazishin@gmail.com
+              bazyshyn.anton@gmail.com
             </a>
           </div>
         </div>
