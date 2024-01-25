@@ -5,6 +5,7 @@ import htmlIcon from '../../../assets/pictures/icons/html.png'
 import jsIcon from '../../../assets/pictures/icons/js.png'
 import tsIcon from '../../../assets/pictures/icons/ts.png'
 import reactIcon from '../../../assets/pictures/icons/react.png'
+import nextjsIcon from '../../../assets/pictures/icons/nextjs.png'
 import muiIcon from '../../../assets/pictures/icons/mui.png'
 import sassIcon from '../../../assets/pictures/icons/sass.png'
 
@@ -41,6 +42,12 @@ const TechStack = () => {
           src={reactIcon}
           alt="react"
           title="React"
+        />
+        <LazyLoadImage
+          style={imgStyle}
+          src={nextjsIcon}
+          alt="nextjs"
+          title="Next.js"
         />
         <LazyLoadImage
           style={imgStyle}
