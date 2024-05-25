@@ -1,0 +1,87 @@
+.desktopHeaderContainer {
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+.desktopHeaderInContainer {
+  width: 100%;
+  max-width: 2600px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.desktopHeaderMainPart {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding: 10px 30px;
+
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(66, 69, 70, 0.8);
+}
+
+.listContainer {
+  width: 100%;
+}
+.listContainer li {
+  height: 100%;
+  padding: 0px 16px;
+}
+
+.gifIconContainer {
+  width: 80px;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.gifIconContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.otherLinksDrop {
+  padding: 0px 24px;
+  margin-right: 10px;
+}
+
+.otherLinksDrop svg:first-child {
+  font-size: 2rem;
+  padding-right: 8px;
+}
+.contactButton {
+  padding: 0px 24px;
+  border-radius: 8px;
+  background-color: #1272e0;
+}
+.contactButton:hover {
+  background-color: #147efb;
+}
+
+.listContainer,
+.listContainer li,
+.gifIconContainer,
+.otherLinksDrop,
+.contactButton {
+  display: flex;
+  align-items: center;
+}
+
+.listContainer li,
+.otherLinksDrop,
+.contactButton {
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins-bold';
+  font-size: 18px;
+  transition: all 0.15s ease-in-out;
+}
+
+.listContainer li:hover,
+.otherLinksDrop:hover {
+  border-radius: 8px;
+  background-color: rgba(89, 93, 94, 0.8);
+}
