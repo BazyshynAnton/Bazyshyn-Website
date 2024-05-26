@@ -1,4 +1,32 @@
-.container {
+.homePageBackground {
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+
+  background-image: url(../../assets/pictures/home_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+}
+
+.introduceHelperContainer {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.introduceContainer {
+  width: 100%;
+  height: 600px;
+  max-width: 1200px;
+  background-color: #fff;
+  margin-top: 6rem;
+  box-shadow: 0 0 10px #0000001a;
 }
