@@ -32,5 +32,10 @@ a {
 
 @font-face {
   font-family: 'Poppins-bold';
-  src: url('../src/assets/fonts/Poppins//Poppins-Bold.ttf');
+  src: url('../src/assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Open-sans';
+  src: url('../src/assets/fonts/Open-sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }

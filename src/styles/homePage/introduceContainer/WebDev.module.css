@@ -1,0 +1,73 @@
+.webInformationContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 0px 20px;
+}
+
+.webTechnology {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.webTechnologyHeaderText {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.webTechnologyHeaderText h3,
+.techStackContainer p {
+  font-family: 'Open-sans';
+  font-weight: bold;
+}
+
+.webTechnologyHeaderText h3 {
+  color: #2d2e32;
+  font-size: 3rem;
+}
+
+.webTechnologyHeaderText p {
+  color: #000;
+  font-family: 'Open-sans';
+}
+
+.techStackContainer {
+  display: flex;
+  align-items: center;
+}
+
+.techStackContainer p {
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  color: #2d2e32;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  margin-right: 1.5rem;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pictureOfTheBestProgrammerInTheWorld {
+  padding: 0px 40px;
+  width: 300px;
+}
+
+.iconsStyle {
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  transition: all 0.2s ease-out;
+}
+
+.iconsStyle:hover {
+  transform: translateY(-3px);
+}
