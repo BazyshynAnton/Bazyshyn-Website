@@ -2,6 +2,8 @@ import IntroduceContainer from './homePageContent/introduceContainer/IntroduceCo
 
 import styles from '../../styles/homePage/HomePage.module.css'
 import AboutMe from './homePageContent/aboutMe/AboutMe'
+import WebPortfolio from './homePageContent/portfolio/webPortfolio/WebPortfolio'
+import ContactMe from './homePageContent/contactMe/ContactMe'
 
 export default function HomePage() {
   return (
@@ -10,6 +12,8 @@ export default function HomePage() {
       <div className="main-container">
         <IntroduceContainer />
         <AboutMe />
+        <WebPortfolio />
+        <ContactMe />
       </div>
     </>
   )

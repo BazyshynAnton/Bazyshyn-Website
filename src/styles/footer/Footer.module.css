@@ -1,0 +1,20 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+  gap: 0.5rem;
+  background: #2d2e32;
+  color: #fff;
+}
+
+.footerContainer p:first-child {
+  font-family: 'Poppins-bold';
+  font-size: 1.5rem;
+}
+
+.footerContainer p:last-child {
+  font-family: 'Open-sans';
+  font-size: 1rem;
+}

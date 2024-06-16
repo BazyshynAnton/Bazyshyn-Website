@@ -1,6 +1,7 @@
 import macbookPic from '../../../../assets/pictures/macbookPic.jpg'
 
 import styles from '../../../../styles/homePage/aboutMe/AboutMeWeb.module.css'
+import Spin from './Spin'
 
 export default function AboutMeWeb() {
   return (
@@ -11,6 +12,7 @@ export default function AboutMeWeb() {
       <div className={styles.contentContainer}>
         <div className={styles.imgContainer}>
           <img src={macbookPic} alt="macbookPicture" />
+          <Spin />
         </div>
         <div className={styles.aboutMeText}>
           <h3>
@@ -18,11 +20,18 @@ export default function AboutMeWeb() {
             Ukraine.
           </h3>
           <p>
-            I present myself as an ambitious front-end developer ready to
-            contribute to your projects.
+            <br />I present myself as an ambitious front-end developer with 1.5
+            years of experience, ready to contribute to your projects.
             <br /> I am prepared to contribute to your team, where
             professionalism, collaborative work, and a commitment to
             high-quality results are valued.
+          </p>
+          <p>
+            • Self-motivated and self-managing, with great organizational
+            skills.
+            <br />• High attention to detail, thoroughness, and organization.
+            <br />• Strong problem-solving and analytical skills. <br />• I
+            consider myself a well-rounded person with skills in multiple areas.
           </p>
         </div>
       </div>

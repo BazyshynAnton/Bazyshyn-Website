@@ -19,19 +19,18 @@
   height: 100vh;
   padding-top: 6rem;
 }
-.aboutMeHelpContainer {
-  padding-bottom: 20px;
-}
 
 .introduceHelperContainer,
-.aboutMeHelpContainer {
+.aboutMeHelpContainer,
+.contactMeHelperContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .introduceContainer,
-.aboutMeContainer {
+.aboutMeContainer,
+.contactMeContainer {
   width: 100%;
   height: 600px;
   max-width: 1200px;
@@ -41,9 +40,13 @@
   position: relative;
 }
 
+.contactMeContainer {
+  margin-bottom: 6rem;
+}
+
 .introduceHeader {
   position: absolute;
-  top: -59.7px;
+  top: -63px;
   left: 10px;
   display: flex;
   gap: 10px;
@@ -54,8 +57,7 @@
   width: fit-content;
   height: auto;
   font-size: 0.9rem;
-  font-family: 'Open-sans';
-  font-weight: bold;
+  font-family: 'Poppins-bold';
   color: #2d2e32;
 }
 

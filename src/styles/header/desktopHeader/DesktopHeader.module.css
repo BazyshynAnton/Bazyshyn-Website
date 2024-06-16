@@ -73,6 +73,7 @@
 
 .listContainer li,
 .otherLinksDrop,
+.otherLinksDrop p,
 .contactButton {
   cursor: pointer;
   color: #fff;
