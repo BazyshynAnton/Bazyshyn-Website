@@ -16,3 +16,48 @@
   padding: 30px 0px;
   color: #2d2e32;
 }
+
+/* 
+ */
+
+.contentContainer {
+  padding: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.myInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.myInfo h3 {
+  font-family: 'Poppins-bold';
+  font-size: 1.2rem;
+}
+
+.myInfo p {
+  font-family: 'Open-sans';
+  font-size: 1rem;
+}
+
+.myInfo h3,
+.myInfo p {
+  color: #2d2e32;
+}
+
+.myInfoIcons {
+  border-radius: 50%;
+  background: #fff;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
