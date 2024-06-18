@@ -1,3 +1,4 @@
+import ContactForm from './ContactForm'
 import ContactInfo from './ContactInfo'
 
 import styles from '../../../../../styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css'
@@ -10,6 +11,7 @@ export default function ContactMeContent() {
       </div>
       <div className={styles.contentContainer}>
         <ContactInfo />
+        <ContactForm />
       </div>
     </>
   )

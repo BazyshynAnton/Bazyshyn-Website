@@ -18,10 +18,14 @@
 }
 
 /* 
+links
  */
 
 .contentContainer {
-  padding: 20px;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contactContainer {
@@ -30,7 +34,7 @@
   justify-content: center;
   width: fit-content;
   height: fit-content;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .myInfo {
@@ -60,4 +64,77 @@
   display: flex;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+
+.formEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.formEmail textarea {
+  padding: 10px 10px;
+  height: 150px;
+  border: 2px solid #2d2e32;
+  border-radius: 4px;
+  user-select: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+
+.nameEmailBlock {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.nameEmailBlock div {
+  display: flex;
+  flex-direction: column;
+}
+.formEmail label {
+  font-size: 1.1rem;
+  color: #2d2e32;
+}
+
+.nameEmailBlock input {
+  width: 240px;
+  height: 40px;
+  padding: 0px 10px;
+  border: 2px solid #2d2e32;
+  border-radius: 4px;
+  user-select: none;
+  outline: none;
+}
+
+.buttonLoading {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 4px;
+  border: 2px solid #2d2e32;
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.buttonSubmit {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 4px;
+  border: 2px solid #2d2e32;
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.formEmail,
+input[type='submit'] {
+  font-family: 'Open-sans';
+}
+
+input[type='submit'] {
+  font-size: 1rem;
 }
