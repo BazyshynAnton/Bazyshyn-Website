@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import emailjs from '@emailjs/browser'
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
 
 import styles from '../../../../../styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css'
 
@@ -24,11 +24,11 @@ export default function ContactForm() {
         'uJe3e5825uwPWPzv6'
       )
       .then(
-        (result: any) => {
+        (result: EmailJSResponseStatus) => {
           console.log(result.text)
           setLoading(false)
         },
-        (error: any) => {
+        (error: EmailJSResponseStatus) => {
           console.log(error.text)
           setLoading(false)
         }

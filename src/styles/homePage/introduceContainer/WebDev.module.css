@@ -1,7 +1,9 @@
 .webInformationContainer {
   display: flex;
   justify-content: center;
-  padding: 40px 20px 0px 20px;
+  align-items: center;
+  padding: 40px 20px 40px 20px;
+  height: 100%;
 }
 
 .webTechnology {
@@ -34,6 +36,7 @@
 .webTechnologyHeaderText p {
   color: #000;
   font-family: 'Open-sans';
+  font-size: 16px;
 }
 
 .techStackContainer {
@@ -70,4 +73,95 @@
 
 .iconsStyle:hover {
   transform: translateY(-3px);
+}
+
+@media (max-width: 1050px) {
+  .webTechnologyHeaderText {
+    gap: 1rem;
+  }
+
+  .webTechnologyHeaderText h3 {
+    font-size: 2rem;
+  }
+
+  .webTechnologyHeaderText p {
+    font-size: 14px;
+  }
+
+  .techStackContainer p {
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .iconsStyle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .pictureOfTheBestProgrammerInTheWorld,
+  .pictureOfTheBestProgrammerInTheWorld img {
+    padding: 0px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 885px) {
+  .webInformationContainer {
+    flex-direction: column-reverse;
+  }
+
+  .webTechnology {
+    gap: 3rem;
+  }
+
+  .techStackContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .techStackContainer p {
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    padding-right: 0rem;
+    margin-right: 0rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .iconsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+
+  .iconsStyle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .webTechnologyHeaderText {
+    align-items: center;
+  }
+
+  .webTechnologyHeaderText h3 {
+    font-size: 2rem;
+  }
+
+  .webTechnologyHeaderText p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .webTechnologyHeaderText h3 {
+    font-size: 1.5rem;
+  }
+
+  .webTechnologyHeaderText p {
+    font-size: 14px;
+    text-align: center;
+  }
 }

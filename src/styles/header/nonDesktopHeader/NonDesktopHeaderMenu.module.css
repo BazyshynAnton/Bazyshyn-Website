@@ -1,0 +1,59 @@
+.nonDesktopHeaderMenuContainer {
+  position: absolute;
+  bottom: -285px;
+  right: -15px;
+  width: max-content;
+  height: 285px;
+  z-index: 999;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  background: #252629;
+  border-radius: 8px;
+}
+
+.content div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins-bold';
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.15s ease-in-out;
+  padding: 10px;
+}
+
+.content div:hover {
+  border-radius: 8px;
+  background-color: rgba(58, 61, 61, 0.8);
+}
+
+.dropDownArrow {
+  background: #252629;
+  border-color: #0000 #0000 #0000 #0000;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0px;
+  height: 16px;
+  right: 20%;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg) translate(-50%);
+  transform-origin: center;
+  transition: opacity 0.1s ease;
+  width: 16px;
+}
