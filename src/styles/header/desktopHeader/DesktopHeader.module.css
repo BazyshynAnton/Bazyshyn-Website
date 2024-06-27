@@ -49,12 +49,18 @@
   position: relative;
   padding: 0px 24px;
   margin-right: 10px;
+
+  color: #fff;
+  font-family: 'Poppins-bold';
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
-.otherLinksDrop svg:first-child {
-  font-size: 2rem;
+.otherLinksDrop svg {
   padding-right: 8px;
+  font-size: 2rem;
 }
+
 .contactButton {
   padding: 0px 24px;
   border-radius: 8px;
@@ -76,7 +82,6 @@
 
 .listContainer li,
 .listContainer a,
-.otherLinksDrop,
 .otherLinksDrop p,
 .contactButton {
   cursor: pointer;
@@ -95,13 +100,13 @@
 }
 
 .linksContainer {
-  top: 54px;
+  top: 53px;
   right: -26px;
   position: absolute;
   display: flex;
   align-items: flex-end;
   width: max-content;
-  height: 145px;
+  height: 155px;
 }
 
 .linksContent {

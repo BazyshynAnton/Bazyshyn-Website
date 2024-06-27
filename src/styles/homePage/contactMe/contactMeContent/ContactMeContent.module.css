@@ -138,3 +138,32 @@ input[type='submit'] {
 input[type='submit'] {
   font-size: 1rem;
 }
+
+@media (max-width: 1055px) {
+  .contentContainer {
+    padding: 1rem 3rem;
+  }
+
+  .formEmail textarea,
+  .nameEmailBlock input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 887px) {
+  .contactContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+  }
+
+  .contentContainer {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    padding: 30px 20px 40px 20px;
+  }
+}

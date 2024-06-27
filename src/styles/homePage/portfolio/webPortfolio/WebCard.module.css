@@ -31,6 +31,7 @@
   height: auto;
   transition: all 3s ease-in-out;
 }
+
 .imgContainerOne:hover img {
   transform: translateY(-62%);
 }
@@ -60,6 +61,7 @@
   margin-bottom: 2rem;
   position: relative;
 }
+
 .infoCardContainer h3,
 .infoCardContainer p,
 .technologyContainer p,
@@ -102,4 +104,87 @@
   justify-content: center;
   font-size: 1rem;
   gap: 0.5rem;
+  color: #2d2e32;
+  font-weight: bold;
+}
+
+.cardLinks span svg {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1285px) {
+  .webCardContainerRight,
+  .webCardContainerLeft {
+    gap: 4rem;
+    height: max-content;
+    align-items: center;
+  }
+
+  .imgContainerOne,
+  .imgContainerTwo {
+    height: 300px;
+  }
+
+  .imgContainerOne:hover img {
+    transform: translateY(-0%);
+  }
+
+  .imgContainerTwo:hover img {
+    transform: translateY(-0%);
+  }
+}
+
+@media (max-width: 1160px) {
+  .infoCardContainer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .infoCardContainer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 971px) {
+  .cardLinks,
+  .technologyContainer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 885px) {
+  .webCardContainerRight,
+  .webCardContainerLeft {
+    flex-direction: column-reverse;
+  }
+
+  .infoCardContainer h3 {
+    font-size: 1.5rem;
+  }
+  .infoCardContainer p {
+    font-size: 1rem;
+  }
+
+  .imgContainerOne img,
+  .imgContainerTwo img {
+    transition: all 3s ease-in-out;
+  }
+
+  .imgContainerOne,
+  .imgContainerTwo {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 680px) {
+  .webCardContainerRight,
+  .webCardContainerLeft {
+    padding: 30px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 485px) {
+  /* change preview pics to icons */
 }

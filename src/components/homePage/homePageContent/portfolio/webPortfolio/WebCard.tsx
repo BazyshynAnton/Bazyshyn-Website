@@ -1,5 +1,5 @@
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LaunchOutlinedIcon from '@mui/icons-material/LaunchOutlined'
+import { IoLogoGithub } from "react-icons/io";
+import { MdLaunch } from "react-icons/md";
 
 import styles from '../../../../../styles/homePage/portfolio/webPortfolio/WebCard.module.css'
 
@@ -47,10 +47,10 @@ export default function WebCard({
         </div>
         <div className={styles.cardLinks}>
           <span>
-            Code <GitHubIcon />
+            Code <IoLogoGithub />
           </span>
           <span>
-            Live Demo <LaunchOutlinedIcon />
+            Live Demo <MdLaunch />
           </span>
         </div>
       </div>

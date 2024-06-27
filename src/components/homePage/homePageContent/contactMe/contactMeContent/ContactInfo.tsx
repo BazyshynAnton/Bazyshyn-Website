@@ -1,6 +1,6 @@
-import MapIcon from '@mui/icons-material/Map'
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import { IoMdMap } from 'react-icons/io'
+import { MdOutlineEmail } from 'react-icons/md'
+import { FaLinkedin } from 'react-icons/fa'
 
 import { ReactElement } from 'react'
 
@@ -12,21 +12,21 @@ export default function ContactInfo() {
   return (
     <div className={styles.contactContainer}>
       <Info
-        children={<MapIcon style={stylesForIcons} />}
+        children={<IoMdMap style={stylesForIcons} />}
         infoName={'Location'}
         infoText={'Balakliya, Ukraine.'}
         linkTo={''}
       />
 
       <Info
-        children={<EmailOutlinedIcon style={stylesForIcons} />}
+        children={<MdOutlineEmail style={stylesForIcons} />}
         infoName={'Mail'}
         infoText={'bazyshyn.anton@gmail.com'}
         linkTo={''}
       />
 
       <Info
-        children={<LinkedInIcon style={stylesForIcons} />}
+        children={<FaLinkedin style={stylesForIcons} />}
         infoName={'LinkedIn'}
         infoText={'Anton Bazyshyn'}
         linkTo={'https://www.linkedin.com/in/anton-bazyshyn-dev/'}

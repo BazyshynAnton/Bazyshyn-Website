@@ -73,7 +73,9 @@
 }
 
 @media (max-width: 885px) {
-  .introduceContainer {
+  .introduceContainer,
+  .aboutMeContainer,
+  .contactMeContainer {
     height: max-content;
   }
 }

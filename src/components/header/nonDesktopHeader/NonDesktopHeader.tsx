@@ -1,4 +1,4 @@
-import MenuIcon from '@mui/icons-material/Menu'
+import { IoMdMenu } from 'react-icons/io'
 import reactIco from '../../../assets/pictures/react.png'
 import { useHeaderContext } from '../../../context/header/HeaderContext'
 
@@ -18,7 +18,7 @@ export default function NonDesktopHeader() {
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
         >
-          <MenuIcon />
+          <IoMdMenu />
           {isOpen && <NonDesktopHeaderMenu />}
         </div>
       </div>

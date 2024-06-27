@@ -28,18 +28,18 @@ export default function IntroduceContainer() {
                 <div className={styles.introduceHeaderSection}>
                   <h2>Web-dev</h2>
                 </div>
-                <div className={styles.introduceHeaderSection}>
+                {/* <div className={styles.introduceHeaderSection}>
                   <h2>Game-dev</h2>
-                </div>
+                </div> */}
               </>
             ) : (
               <>
                 <div className={styles.introduceHeaderSection}>
                   <h2>Web</h2>
                 </div>
-                <div className={styles.introduceHeaderSection}>
+                {/* <div className={styles.introduceHeaderSection}>
                   <h2>Game</h2>
-                </div>
+                </div> */}
               </>
             )}
           </div>

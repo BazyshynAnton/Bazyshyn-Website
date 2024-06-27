@@ -1,7 +1,7 @@
+import Spin from './Spin'
 import macbookPic from '../../../../assets/pictures/macbookPic.jpg'
 
 import styles from '../../../../styles/homePage/aboutMe/AboutMeWeb.module.css'
-import Spin from './Spin'
 
 export default function AboutMeWeb() {
   return (

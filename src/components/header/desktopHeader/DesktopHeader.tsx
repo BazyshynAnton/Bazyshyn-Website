@@ -4,8 +4,8 @@ import { GrGithub } from 'react-icons/gr'
 
 import reactIco from '../../../assets/pictures/react.png'
 
-import LinkIcon from '@mui/icons-material/Link'
-import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded'
+import { IoLink } from 'react-icons/io5'
+import { IoIosArrowDown } from 'react-icons/io'
 import { useHeaderContext } from '../../../context/header/HeaderContext'
 
 export default function DesktopHeader() {
@@ -26,9 +26,9 @@ export default function DesktopHeader() {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
           >
-            <LinkIcon />
+            <IoLink />
             <p>Links</p>
-            <KeyboardArrowDownRoundedIcon />
+            <IoIosArrowDown />
             {isOpen && (
               <div className={styles.linksContainer}>
                 <div className={styles.dropDownArrow}></div>
