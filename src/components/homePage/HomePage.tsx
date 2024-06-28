@@ -7,7 +7,7 @@ import ContactMe from './homePageContent/contactMe/ContactMe'
 
 export default function HomePage() {
   return (
-    <>
+    <div className="wrapper">
       <div className={styles.homePageBackground}></div>
       <div className="main-container">
         <IntroduceContainer />
@@ -15,6 +15,6 @@ export default function HomePage() {
         <WebPortfolio />
         <ContactMe />
       </div>
-    </>
+    </div>
   )
 }
