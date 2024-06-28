@@ -13,8 +13,8 @@
 .linksDropWrapper {
   position: absolute;
   top: -5px;
-  left: -174px;
-  width: 155px;
+  left: -200px;
+  width: 180px;
   height: max-content;
   z-index: 999;
   z-index: 999;
@@ -51,6 +51,11 @@
   font-size: 18px;
   transition: all 0.15s ease-in-out;
   padding: 10px;
+}
+
+.linksDrop a svg {
+  font-size: 1.6rem;
+  padding-left: 5px;
 }
 
 .content div:hover,

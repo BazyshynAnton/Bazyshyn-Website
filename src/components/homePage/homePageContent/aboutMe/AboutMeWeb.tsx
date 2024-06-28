@@ -2,8 +2,23 @@ import Spin from './Spin'
 import macbookPic from '../../../../assets/pictures/macbookPic.jpg'
 
 import styles from '../../../../styles/homePage/aboutMe/AboutMeWeb.module.css'
+import { useEffect, useState } from 'react'
 
 export default function AboutMeWeb() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 645)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth > 885)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  })
+
   return (
     <div className={styles.aboutMeWebContainer}>
       <div className={styles.aboutMeWebHeaderContainer}>
@@ -12,7 +27,7 @@ export default function AboutMeWeb() {
       <div className={styles.contentContainer}>
         <div className={styles.imgContainer}>
           <img src={macbookPic} alt="macbookPicture" />
-          <Spin />
+          {isSmallScreen && <Spin />}
         </div>
         <div className={styles.aboutMeText}>
           <h3>

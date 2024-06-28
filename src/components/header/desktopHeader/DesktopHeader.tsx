@@ -1,6 +1,7 @@
 import styles from '../../../styles/header/desktopHeader/DesktopHeader.module.css'
 import { SiLeetcode } from 'react-icons/si'
 import { GrGithub } from 'react-icons/gr'
+import { FaLinkedin } from 'react-icons/fa'
 
 import reactIco from '../../../assets/pictures/react.png'
 
@@ -19,7 +20,7 @@ export default function DesktopHeader() {
               <img src={reactIco}></img>
             </div>
             <a href="#home">Home</a>
-            <li>Web-Dev</li>
+            <a href="#home">Web-Dev</a>
           </ul>
           <div
             className={styles.otherLinksDrop}
@@ -46,6 +47,15 @@ export default function DesktopHeader() {
                     <div>
                       <p>LeetCode</p>
                       <SiLeetcode />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/anton-bazyshyn-dev/"
+                    target="blank"
+                  >
+                    <div>
+                      <p>LinkedIn</p>
+                      <FaLinkedin />
                     </div>
                   </a>
                 </div>
