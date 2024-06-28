@@ -20,7 +20,9 @@ export default function DesktopHeader() {
               <img src={reactIco}></img>
             </div>
             <a href="#home">Home</a>
-            <a href="#home">Web-Dev</a>
+            <a href="#home">Web-dev</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
           </ul>
           <div
             className={styles.otherLinksDrop}

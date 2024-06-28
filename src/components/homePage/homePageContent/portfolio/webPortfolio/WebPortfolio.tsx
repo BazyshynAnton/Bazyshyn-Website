@@ -9,7 +9,7 @@ import styles from '../../../../../styles/homePage/portfolio/webPortfolio/WebPor
 
 export default function WebPortfolio() {
   return (
-    <div className={styles.webPortfolioHelpContainer}>
+    <div className={styles.webPortfolioHelpContainer} id="portfolio">
       <div className={styles.webPortfolioContainer}>
         <div className={styles.webPortfolioHeader}>
           <h3>Portfolio</h3>

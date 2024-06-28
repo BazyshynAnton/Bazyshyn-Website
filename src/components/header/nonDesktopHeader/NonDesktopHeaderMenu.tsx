@@ -13,12 +13,21 @@ export default function NonDesktopHeaderMenu() {
     <div className={styles.nonDesktopHeaderMenuContainer}>
       <div className={styles.dropDownArrow}></div>
       <div className={styles.content} onMouseLeave={() => setIsHover(false)}>
-        <div onMouseEnter={() => setIsHover(false)}>
-          <p>Home</p>
-        </div>
-        <div onMouseEnter={() => setIsHover(false)}>
-          <p>Web-dev</p>
-        </div>
+        <a href="#home" onMouseEnter={() => setIsHover(false)}>
+          Home
+        </a>
+
+        <a href="#home" onMouseEnter={() => setIsHover(false)}>
+          Web-dev
+        </a>
+
+        <a href="#about" onMouseEnter={() => setIsHover(false)}>
+          About
+        </a>
+
+        <a href="#portfolio" onMouseEnter={() => setIsHover(false)}>
+          Portfolio
+        </a>
         <div onMouseEnter={() => setIsHover(true)}>
           <p>Links</p>
           {isHover && (
@@ -46,9 +55,13 @@ export default function NonDesktopHeaderMenu() {
             </span>
           )}
         </div>
-        <div onMouseEnter={() => setIsHover(false)}>
-          <p>Contact</p>
-        </div>
+        <a
+          href="#contact"
+          onMouseEnter={() => setIsHover(false)}
+          className={styles.contactLink}
+        >
+          Contact
+        </a>
       </div>
     </div>
   )
