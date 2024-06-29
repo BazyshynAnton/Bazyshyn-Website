@@ -1,8 +1,10 @@
-import { IoLogoGithub } from 'react-icons/io'
-import { MdLaunch } from 'react-icons/md'
+import { GrGithub, MdLaunch } from '../../../../../utils/iconsImports'
 
+import { LazyLoadImage } from '../../../../../utils/lazyImports'
+import { useEffect, useState } from '../../../../../utils/reactImports'
+
+import { webCard } from '../../../../../types/portfolio/webCardTypes'
 import styles from '../../../../../styles/homePage/portfolio/webPortfolio/WebCard.module.css'
-import { useEffect, useState } from 'react'
 
 export default function WebCard({
   position,
@@ -17,20 +19,7 @@ export default function WebCard({
   projectNum,
   gHubLink,
   demoLink,
-}: {
-  position: string
-  headerPartOne: string
-  headerPartTwo: string
-  description: string
-  pictureOfProject: string
-  pictureOfProjectTwo: string
-  firstTech: string
-  secondTech: string
-  thirdTech: string
-  projectNum: string
-  gHubLink: string
-  demoLink: string
-}) {
+}: webCard) {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 885)
 
   useEffect(() => {
@@ -60,7 +49,7 @@ export default function WebCard({
           }
         >
           <a href={demoLink} target="blank">
-            <img src={pictureOfProject} alt="picture-of-project" />
+            <LazyLoadImage src={pictureOfProject} alt="picture-of-project" />
           </a>
         </div>
       ) : (
@@ -72,7 +61,10 @@ export default function WebCard({
           }
         >
           <a href={demoLink} target="blank">
-            <img src={pictureOfProjectTwo} alt="picture-of-project-two" />
+            <LazyLoadImage
+              src={pictureOfProjectTwo}
+              alt="picture-of-project-two"
+            />
           </a>
         </div>
       )}
@@ -97,7 +89,7 @@ export default function WebCard({
         </div>
         <div className={styles.cardLinks}>
           <a href={gHubLink} target="blank">
-            Code <IoLogoGithub />
+            Code <GrGithub />
           </a>
           <a href={demoLink} target="blank">
             Live Demo <MdLaunch />

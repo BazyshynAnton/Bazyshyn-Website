@@ -1,19 +1,14 @@
-import React, {
-  ReactNode,
+import { ReactNode } from 'react'
+import {
   createContext,
   useContext,
   useEffect,
   useState,
-} from 'react'
+} from '../../utils/reactImports'
 
-interface HeaderContextType {
-  isDesktop: boolean
-  setIsDesktop: React.Dispatch<React.SetStateAction<boolean>>
-  isOpen: boolean
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+import { headerContext } from '../../types/headerCntxt/headerContextTypes'
 
-const HeaderContext = createContext<HeaderContextType>({} as HeaderContextType)
+const HeaderContext = createContext<headerContext>({} as headerContext)
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const useHeaderContext = () => {

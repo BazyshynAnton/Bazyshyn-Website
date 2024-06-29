@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
-import { SiLeetcode } from 'react-icons/si'
-import { GrGithub } from 'react-icons/gr'
-import { FaLinkedin } from 'react-icons/fa'
+import { SiLeetcode, GrGithub, FaLinkedin } from '../../../utils/iconsImports'
 
 import styles from '../../../styles/header/nonDesktopHeader/NonDesktopHeaderMenu.module.css'
 

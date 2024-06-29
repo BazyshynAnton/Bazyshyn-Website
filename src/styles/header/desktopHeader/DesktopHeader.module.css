@@ -34,13 +34,13 @@
   padding: 0px 16px;
 }
 
-.gifIconContainer {
+.headerIconContainer {
   width: 80px;
   height: 100%;
   padding-right: 20px;
 }
 
-.gifIconContainer img {
+.headerIconContainer img {
   width: 100%;
   object-fit: contain;
 }
@@ -73,7 +73,7 @@
 .listContainer,
 .listContainer li,
 .listContainer a,
-.gifIconContainer,
+.headerIconContainer,
 .otherLinksDrop,
 .contactButton {
   display: flex;

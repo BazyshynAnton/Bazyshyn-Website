@@ -1,8 +1,10 @@
 import Spin from './Spin'
+import { useEffect, useState } from '../../../../utils/reactImports'
+import { LazyLoadImage } from '../../../../utils/lazyImports'
+
 import macbookPic from '../../../../assets/pictures/macbookPic.jpg'
 
 import styles from '../../../../styles/homePage/aboutMe/AboutMeWeb.module.css'
-import { useEffect, useState } from 'react'
 
 export default function AboutMeWeb() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 645)
@@ -26,7 +28,7 @@ export default function AboutMeWeb() {
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.imgContainer}>
-          <img src={macbookPic} alt="macbookPicture" />
+          <LazyLoadImage src={macbookPic} alt="macbookPicture" />
           {isSmallScreen && <Spin />}
         </div>
         <div className={styles.aboutMeText}>

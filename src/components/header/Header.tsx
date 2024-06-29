@@ -1,11 +1,25 @@
-import DesktopHeader from './desktopHeader/DesktopHeader'
-import NonDesktopHeader from './nonDesktopHeader/NonDesktopHeader'
-
 import { useHeaderContext } from '../../context/header/HeaderContext'
 
-// import styles from '../../styles/header/Header.module.css'
+import { lazy, Suspense } from 'react'
+
+const DesktopHeader = lazy(() => import('./desktopHeader/DesktopHeader'))
+const NonDesktopHeader = lazy(
+  () => import('./nonDesktopHeader/NonDesktopHeader')
+)
 
 export default function Header() {
   const { isDesktop } = useHeaderContext()
-  return <>{isDesktop ? <DesktopHeader /> : <NonDesktopHeader />}</>
+  return (
+    <>
+      {isDesktop ? (
+        <Suspense>
+          <DesktopHeader />
+        </Suspense>
+      ) : (
+        <Suspense>
+          <NonDesktopHeader />
+        </Suspense>
+      )}
+    </>
+  )
 }

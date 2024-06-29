@@ -1,13 +1,17 @@
-import styles from '../../../styles/header/desktopHeader/DesktopHeader.module.css'
-import { SiLeetcode } from 'react-icons/si'
-import { GrGithub } from 'react-icons/gr'
-import { FaLinkedin } from 'react-icons/fa'
+import { useHeaderContext } from '../../../context/header/HeaderContext'
+import { LazyLoadImage } from '../../../utils/lazyImports'
 
 import reactIco from '../../../assets/pictures/react.png'
 
-import { IoLink } from 'react-icons/io5'
-import { IoIosArrowDown } from 'react-icons/io'
-import { useHeaderContext } from '../../../context/header/HeaderContext'
+import {
+  SiLeetcode,
+  GrGithub,
+  FaLinkedin,
+  IoLink,
+  IoIosArrowDown,
+} from '../../../utils/iconsImports'
+
+import styles from '../../../styles/header/desktopHeader/DesktopHeader.module.css'
 
 export default function DesktopHeader() {
   const { isOpen, setIsOpen } = useHeaderContext()
@@ -16,8 +20,8 @@ export default function DesktopHeader() {
       <div className={styles.desktopHeaderInContainer}>
         <div className={styles.desktopHeaderMainPart}>
           <ul className={styles.listContainer}>
-            <div className={styles.gifIconContainer}>
-              <img src={reactIco}></img>
+            <div className={styles.headerIconContainer}>
+              <LazyLoadImage src={reactIco} alt="header-icon" />
             </div>
             <a href="#home">Home</a>
             <a href="#home">Web-dev</a>

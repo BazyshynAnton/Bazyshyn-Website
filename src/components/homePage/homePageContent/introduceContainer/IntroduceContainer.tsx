@@ -1,5 +1,6 @@
 import WebDev from './WebDev'
-import { useEffect, useState } from 'react'
+
+import { useEffect, useState } from '../../../../utils/reactImports'
 
 import styles from '../../../../styles/homePage/HomePage.module.css'
 

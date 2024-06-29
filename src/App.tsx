@@ -1,6 +1,7 @@
-import { Route, Routes } from 'react-router'
 import MainLayout from './layouts/MainLayout'
 import HomePage from './components/homePage/HomePage'
+
+import { Route, Routes } from 'react-router'
 
 function App() {
   return (

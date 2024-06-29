@@ -1,5 +1,6 @@
-import styles from '../../../../styles/homePage/HomePage.module.css'
 import ContactMeContent from './contactMeContent/ContactMeContent'
+
+import styles from '../../../../styles/homePage/HomePage.module.css'
 
 export default function ContactMe() {
   return (

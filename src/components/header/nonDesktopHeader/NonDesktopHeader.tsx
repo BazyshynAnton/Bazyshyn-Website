@@ -1,9 +1,12 @@
-import { IoMdMenu } from 'react-icons/io'
-import reactIco from '../../../assets/pictures/react.png'
+import NonDesktopHeaderMenu from './NonDesktopHeaderMenu'
+
+import { LazyLoadImage } from '../../../utils/lazyImports'
 import { useHeaderContext } from '../../../context/header/HeaderContext'
+import { IoMdMenu } from '../../../utils/iconsImports'
+
+import reactIco from '../../../assets/pictures/react.png'
 
 import styles from '../../../styles/header/nonDesktopHeader/NonDesktopHeader.module.css'
-import NonDesktopHeaderMenu from './NonDesktopHeaderMenu'
 
 export default function NonDesktopHeader() {
   const { isOpen, setIsOpen } = useHeaderContext()
@@ -11,7 +14,7 @@ export default function NonDesktopHeader() {
     <div className={styles.desktopHeaderContainer}>
       <div className={styles.contentContainer}>
         <div className={styles.imgContainer}>
-          <img src={reactIco} alt="reactIcon" />
+          <LazyLoadImage src={reactIco} alt="reactIcon" />
         </div>
         <div
           className={styles.burgerIcon}

@@ -1,5 +1,6 @@
-import mainPhoto from '../../../../assets/pictures/mainPhoto.png'
+import { LazyLoadImage } from '../../../../utils/lazyImports'
 
+import mainPhoto from '../../../../assets/pictures/mainPhoto.png'
 import cssIcon from '../../../../assets/pictures/icons/css.png'
 import htmlIcon from '../../../../assets/pictures/icons/html.png'
 import jsIcon from '../../../../assets/pictures/icons/js.png'
@@ -26,49 +27,49 @@ export default function WebDev() {
         <div className={styles.techStackContainer}>
           <p>Tech Stack</p>
           <div className={styles.iconsContainer}>
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={cssIcon}
               alt="css"
               title="CSS"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={htmlIcon}
               alt="html"
               title="HTML"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={jsIcon}
               alt="js"
               title="JavaScript"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={tsIcon}
               alt="ts"
               title="TypeScript"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={reactIcon}
               alt="react"
               title="React"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={nextjsIcon}
               alt="nextjs"
               title="Next.js"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={muiIcon}
               alt="mui"
               title="Material UI"
             />
-            <img
+            <LazyLoadImage
               className={styles.iconsStyle}
               src={sassIcon}
               alt="sass"
@@ -78,7 +79,7 @@ export default function WebDev() {
         </div>
       </div>
       <div className={styles.pictureOfTheBestProgrammerInTheWorld}>
-        <img
+        <LazyLoadImage
           style={{ objectFit: 'cover' }}
           src={mainPhoto}
           alt="Bazyshyn Anton"

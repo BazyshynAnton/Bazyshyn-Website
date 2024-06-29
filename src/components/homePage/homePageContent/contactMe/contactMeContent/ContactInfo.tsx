@@ -1,9 +1,10 @@
-import { IoMdMap } from 'react-icons/io'
-import { MdOutlineEmail } from 'react-icons/md'
-import { FaLinkedin } from 'react-icons/fa'
+import {
+  FaLinkedin,
+  IoMdMap,
+  MdOutlineEmail,
+} from '../../../../../utils/iconsImports'
 
-import { ReactElement } from 'react'
-
+import { contactInfo } from '../../../../../types/contactMe/contactInfoTypes'
 import styles from '../../../../../styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css'
 
 const stylesForIcons = { fontSize: '2.2rem', color: '#147efb' }
@@ -35,17 +36,7 @@ export default function ContactInfo() {
   )
 }
 
-function Info({
-  children,
-  infoName,
-  infoText,
-  linkTo,
-}: {
-  children: ReactElement
-  infoName: string
-  infoText: string
-  linkTo: string
-}) {
+function Info({ children, infoName, infoText, linkTo }: contactInfo) {
   return (
     <>
       {linkTo ? (
