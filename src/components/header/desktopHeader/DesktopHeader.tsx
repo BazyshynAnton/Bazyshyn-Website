@@ -1,7 +1,7 @@
 import { useHeaderContext } from '../../../context/header/HeaderContext'
 import { LazyLoadImage } from '../../../utils/lazyImports'
 
-import reactIco from '../../../assets/pictures/react.png'
+import webDevIcon from '../../../assets/pictures/icons/webDevIcon.png'
 
 import {
   SiLeetcode,
@@ -21,7 +21,7 @@ export default function DesktopHeader() {
         <div className={styles.desktopHeaderMainPart}>
           <ul className={styles.listContainer}>
             <div className={styles.headerIconContainer}>
-              <LazyLoadImage src={reactIco} alt="header-icon" />
+              <LazyLoadImage src={webDevIcon} alt="header-icon" />
             </div>
             <a href="#home">Home</a>
             <a href="#home">Web-dev</a>
