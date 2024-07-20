@@ -24,7 +24,7 @@ export default function DesktopHeader() {
               <LazyLoadImage src={webDevIcon} alt="header-icon" />
             </div>
             <a href="#home">Home</a>
-            <a href="#home">Web-dev</a>
+            {/* <a href="#home">Web-dev</a> */}
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
           </ul>

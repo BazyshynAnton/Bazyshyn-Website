@@ -1,9 +1,9 @@
 .nonDesktopHeaderMenuContainer {
   position: absolute;
-  bottom: -425px;
+  bottom: -360px;
   right: -15px;
   width: max-content;
-  height: 425px;
+  height: 359px;
   z-index: 999;
   z-index: 999;
   display: flex;

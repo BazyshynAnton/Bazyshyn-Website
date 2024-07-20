@@ -15,9 +15,9 @@ export default function NonDesktopHeaderMenu() {
           Home
         </a>
 
-        <a href="#home" onMouseEnter={() => setIsHover(false)}>
+        {/* <a href="#home" onMouseEnter={() => setIsHover(false)}>
           Web-dev
-        </a>
+        </a> */}
 
         <a href="#about" onMouseEnter={() => setIsHover(false)}>
           About
