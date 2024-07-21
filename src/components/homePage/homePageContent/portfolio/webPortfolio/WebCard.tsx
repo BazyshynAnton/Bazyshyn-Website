@@ -45,7 +45,11 @@ export default function WebCard({
       {isSmallScreen ? (
         <div
           className={
-            projectNum === '1' ? styles.imgContainerOne : styles.imgContainerTwo
+            projectNum === '1'
+              ? styles.imgContainerOne
+              : projectNum === '2'
+              ? styles.imgContainerTwo
+              : styles.imgContainerThree
           }
         >
           <a href={demoLink} target="blank">
@@ -53,13 +57,7 @@ export default function WebCard({
           </a>
         </div>
       ) : (
-        <div
-          className={
-            projectNum === '1'
-              ? styles.imgContainerThree
-              : styles.imgContainerFour
-          }
-        >
+        <div className={styles.imgPreviewContainer}>
           <a href={demoLink} target="blank">
             <LazyLoadImage
               src={pictureOfProjectTwo}
