@@ -9,7 +9,7 @@
 
 html,
 body {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -38,13 +38,13 @@ a {
 }
 
 @font-face {
-  font-family: 'Poppins-bold';
-  src: url('../src/assets/fonts/Poppins/Poppins-Bold.ttf');
+  font-family: "Poppins-bold";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
-  font-family: 'Open-sans';
-  src: url('../src/assets/fonts/Open-sans/OpenSans-VariableFont_wdth,wght.ttf');
+  font-family: "Open-sans";
+  src: url("assets/fonts/Open-sans/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 /* upload data */
