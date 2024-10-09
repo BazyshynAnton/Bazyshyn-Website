@@ -7,14 +7,14 @@
   z-index: 999;
 }
 
-.desktopHeaderInContainer {
+.desktopHeaderContainer__content {
   width: 100%;
   max-width: 2600px;
   margin: 0 auto;
   padding: 0px 30px;
 }
 
-.desktopHeaderMainPart {
+.desktopHeader {
   display: flex;
   justify-content: space-between;
   height: 75px;
@@ -34,72 +34,72 @@
   padding: 0px 16px;
 }
 
-.headerIconContainer {
+.listContainer__icon {
   width: 80px;
   height: 100%;
   padding-right: 20px;
 }
 
-.headerIconContainer img {
+.listContainer__icon img {
   width: 100%;
   object-fit: contain;
 }
 
-.otherLinksDrop {
+.drop {
   position: relative;
   padding: 0px 24px;
   margin-right: 10px;
 
   color: #fff;
-  font-family: 'Poppins-bold';
+  font-family: "Poppins-bold";
   transition: all 0.15s ease-in-out;
   cursor: pointer;
 }
 
-.otherLinksDrop svg {
+.drop svg {
   padding-right: 8px;
   font-size: 2rem;
 }
 
-.contactButton {
+.desktopHeader__contact {
   padding: 0px 24px;
   border-radius: 8px;
   background-color: #1272e0;
 }
-.contactButton:hover {
+.desktopHeader__contact:hover {
   background-color: #147efb;
 }
 
 .listContainer,
 .listContainer li,
 .listContainer a,
-.headerIconContainer,
-.otherLinksDrop,
-.contactButton {
+.listContainer__icon,
+.drop,
+.desktopHeader__contact {
   display: flex;
   align-items: center;
 }
 
 .listContainer li,
 .listContainer a,
-.otherLinksDrop p,
-.contactButton {
+.drop p,
+.desktopHeader__contact {
   cursor: pointer;
   color: #fff;
-  font-family: 'Poppins-bold';
+  font-family: "Poppins-bold";
   font-size: 18px;
   transition: all 0.15s ease-in-out;
 }
 
 .listContainer li:hover,
 .listContainer a:hover,
-.otherLinksDrop:hover,
-.linksContent div:hover {
+.drop:hover,
+.drop__links__content div:hover {
   border-radius: 8px;
   background-color: rgba(58, 61, 61, 0.8);
 }
 
-.linksContainer {
+.drop__links {
   top: 53px;
   right: -26px;
   position: absolute;
@@ -109,7 +109,7 @@
   height: 207px;
 }
 
-.linksContent {
+.drop__links__content {
   width: max-content;
   height: max-content;
   background: #252629;
@@ -117,7 +117,7 @@
   border-radius: 8px;
 }
 
-.linksContent div {
+.drop__links__content div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,13 +127,13 @@
   cursor: pointer;
 }
 
-.linksContent div p {
+.drop__links__content div p {
   color: #fff;
-  font-family: 'Poppins-bold';
+  font-family: "Poppins-bold";
   font-size: 18px;
 }
 
-.dropDownArrow {
+.drop__links__arrow {
   background: #252629;
   border-color: #0000 #0000 #0000 #0000;
   border-radius: 4px;

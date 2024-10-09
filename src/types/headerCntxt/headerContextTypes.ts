@@ -1,4 +1,4 @@
-import { React } from '../../utils/reactImports'
+import { React } from "utils/reactImports"
 
 export interface headerContext {
   isDesktop: boolean

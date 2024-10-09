@@ -1,8 +1,8 @@
-import WebDev from './WebDev'
+import WebDev from "./WebDev"
 
-import { useEffect, useState } from '../../../../utils/reactImports'
+import { useEffect, useState } from "utils/reactImports"
 
-import styles from '../../../../styles/homePage/HomePage.module.css'
+import styles from "styles/homePage/HomePage.module.css"
 
 export default function IntroduceContainer() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth >= 490)
@@ -12,10 +12,10 @@ export default function IntroduceContainer() {
       setIsSmallScreen(window.innerWidth >= 490)
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   })
 

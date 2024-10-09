@@ -1,10 +1,10 @@
-import { useHeaderContext } from '../../context/header/HeaderContext'
+import { lazy, Suspense } from "react"
 
-import { lazy, Suspense } from 'react'
+import { useHeaderContext } from "context/header/HeaderContext"
 
-const DesktopHeader = lazy(() => import('./desktopHeader/DesktopHeader'))
+const DesktopHeader = lazy(() => import("./desktopHeader/DesktopHeader"))
 const NonDesktopHeader = lazy(
-  () => import('./nonDesktopHeader/NonDesktopHeader')
+  () => import("./nonDesktopHeader/NonDesktopHeader")
 )
 
 export default function Header() {

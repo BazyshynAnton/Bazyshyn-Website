@@ -1,10 +1,10 @@
-import Spin from './Spin'
-import { useEffect, useState } from '../../../../utils/reactImports'
-import { LazyLoadImage } from '../../../../utils/lazyImports'
+import Spin from "./Spin"
+import { useEffect, useState } from "utils/reactImports"
+import { LazyLoadImage } from "utils/lazyImports"
 
-import macbookPic from '../../../../assets/pictures/macbookPic.jpg'
+import macbookPic from "assets/pictures/macbookPic.jpg"
 
-import styles from '../../../../styles/homePage/aboutMe/AboutMeWeb.module.css'
+import styles from "styles/homePage/aboutMe/AboutMeWeb.module.css"
 
 export default function AboutMeWeb() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth > 645)
@@ -14,10 +14,10 @@ export default function AboutMeWeb() {
       setIsSmallScreen(window.innerWidth > 885)
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   })
 

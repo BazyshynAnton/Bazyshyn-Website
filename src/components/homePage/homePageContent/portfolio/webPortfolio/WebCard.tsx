@@ -1,10 +1,10 @@
-import { GrGithub, MdLaunch } from '../../../../../utils/iconsImports'
+import { GrGithub, MdLaunch } from "utils/iconsImports"
 
-import { LazyLoadImage } from '../../../../../utils/lazyImports'
-import { useEffect, useState } from '../../../../../utils/reactImports'
+import { LazyLoadImage } from "utils/lazyImports"
+import { useEffect, useState } from "utils/reactImports"
 
-import { webCard } from '../../../../../types/portfolio/webCardTypes'
-import styles from '../../../../../styles/homePage/portfolio/webPortfolio/WebCard.module.css'
+import { webCard } from "types/portfolio/webCardTypes"
+import styles from "styles/homePage/portfolio/webPortfolio/WebCard.module.css"
 
 export default function WebCard({
   position,
@@ -27,17 +27,17 @@ export default function WebCard({
       setIsSmallScreen(window.innerWidth > 885)
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   })
 
   return (
     <div
       className={
-        position === 'right'
+        position === "right"
           ? styles.webCardContainerRight
           : styles.webCardContainerLeft
       }
@@ -45,9 +45,9 @@ export default function WebCard({
       {isSmallScreen ? (
         <div
           className={
-            projectNum === '1'
+            projectNum === "1"
               ? styles.imgContainerOne
-              : projectNum === '2'
+              : projectNum === "2"
               ? styles.imgContainerTwo
               : styles.imgContainerThree
           }
@@ -69,11 +69,11 @@ export default function WebCard({
       <div className={styles.infoCardContainer}>
         <div
           style={{
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '0.5rem',
-            flexWrap: 'wrap',
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            gap: "0.5rem",
+            flexWrap: "wrap",
           }}
         >
           <h3>{headerPartOne}</h3>

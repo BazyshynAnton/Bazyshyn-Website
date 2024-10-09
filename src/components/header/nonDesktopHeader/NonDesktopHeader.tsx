@@ -1,18 +1,18 @@
-import NonDesktopHeaderMenu from './NonDesktopHeaderMenu'
+import NonDesktopHeaderMenu from "./components/NonDesktopHeaderMenu"
 
-import { LazyLoadImage } from '../../../utils/lazyImports'
-import { useHeaderContext } from '../../../context/header/HeaderContext'
-import { IoMdMenu } from '../../../utils/iconsImports'
+import { LazyLoadImage } from "utils/lazyImports"
+import { useHeaderContext } from "context/header/HeaderContext"
+import { IoMdMenu } from "utils/iconsImports"
 
-import webDevIcon from '../../../assets/pictures/icons/webDevIcon.png'
+import webDevIcon from "assets/pictures/icons/webDevIcon.png"
 
-import styles from '../../../styles/header/nonDesktopHeader/NonDesktopHeader.module.css'
+import styles from "styles/header/nonDesktopHeader/NonDesktopHeader.module.css"
 
 export default function NonDesktopHeader() {
   const { isOpen, setIsOpen } = useHeaderContext()
   return (
-    <div className={styles.desktopHeaderContainer}>
-      <div className={styles.contentContainer}>
+    <div className={styles.nonDesktopHeaderContainer}>
+      <div className={styles.nonDesktopHeaderContainer__content}>
         <div className={styles.imgContainer}>
           <LazyLoadImage src={webDevIcon} alt="reactIcon" />
         </div>

@@ -1,7 +1,7 @@
-import ContactForm from './ContactForm'
-import ContactInfo from './ContactInfo'
+import ContactForm from "./ContactForm"
+import ContactInfo from "./ContactInfo"
 
-import styles from '../../../../../styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css'
+import styles from "styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css"
 
 export default function ContactMeContent() {
   return (

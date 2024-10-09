@@ -1,8 +1,8 @@
-import { React, useRef, useState } from '../../../../../utils/reactImports'
+import { React, useRef, useState } from "utils/reactImports"
 
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser"
 
-import styles from '../../../../../styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css'
+import styles from "styles/homePage/contactMe/contactMeContent/ContactMeContent.module.css"
 
 export default function ContactForm() {
   const [loading, setLoading] = useState<boolean>(false)
@@ -18,10 +18,10 @@ export default function ContactForm() {
     setLoading(true)
     emailjs
       .sendForm(
-        'service_l8kejw9',
-        'template_d6owbp9',
+        "service_l8kejw9",
+        "template_d6owbp9",
         formCurrent,
-        'uJe3e5825uwPWPzv6'
+        "uJe3e5825uwPWPzv6"
       )
       .then(
         (result: EmailJSResponseStatus) => {

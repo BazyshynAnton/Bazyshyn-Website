@@ -1,12 +1,12 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react"
 import {
   createContext,
   useContext,
   useEffect,
   useState,
-} from '../../utils/reactImports'
+} from "utils/reactImports"
 
-import { headerContext } from '../../types/headerCntxt/headerContextTypes'
+import { headerContext } from "types/headerCntxt/headerContextTypes"
 
 const HeaderContext = createContext<headerContext>({} as headerContext)
 
@@ -34,10 +34,10 @@ export const HeaderContextProvider = ({
       setIsDesktop(window.innerWidth >= 960)
     }
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window.removeEventListener("resize", handleResize)
     }
   }, [])
 
