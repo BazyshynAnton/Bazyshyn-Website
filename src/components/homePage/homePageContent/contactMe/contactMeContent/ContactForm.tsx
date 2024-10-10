@@ -37,7 +37,7 @@ export default function ContactForm() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.formEmail}>
-      <div className={styles.nameEmailBlock}>
+      <div className={styles.formEmail__name}>
         <div>
           <label htmlFor="user_name">Your Name</label>
           <input id="user_name" type="text" name="user_name" />
@@ -50,7 +50,7 @@ export default function ContactForm() {
       <label htmlFor="message">Message</label>
       <textarea id="message" name="message" />
       {loading ? (
-        <button className={styles.buttonLoading}>
+        <button className={styles.formEmail__loading}>
           <div className="lds-ellipsis">
             <div></div>
             <div></div>
@@ -59,7 +59,11 @@ export default function ContactForm() {
           </div>
         </button>
       ) : (
-        <input className={styles.buttonSubmit} type="submit" value="Send" />
+        <input
+          className={styles.formEmail__submit}
+          type="submit"
+          value="Send"
+        />
       )}
     </form>
   )

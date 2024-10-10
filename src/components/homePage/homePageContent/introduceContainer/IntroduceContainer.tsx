@@ -21,26 +21,20 @@ export default function IntroduceContainer() {
 
   return (
     <div id="home" className={styles.introduceHelperContainer}>
-      <div className={styles.introduceContainer}>
-        <div className={styles.sectionLine}>
-          <div className={styles.introduceHeader}>
+      <div className={styles.introduce}>
+        <div className={styles.introduce__header}>
+          <div className={styles.introduce__header__content}>
             {isSmallScreen ? (
               <>
-                <div className={styles.introduceHeaderSection}>
+                <div className={styles.introduce__header__content_section}>
                   <h2>Web-dev</h2>
                 </div>
-                {/* <div className={styles.introduceHeaderSection}>
-                  <h2>Game-dev</h2>
-                </div> */}
               </>
             ) : (
               <>
-                <div className={styles.introduceHeaderSection}>
+                <div className={styles.introduce__header__content_section}>
                   <h2>Web</h2>
                 </div>
-                {/* <div className={styles.introduceHeaderSection}>
-                  <h2>Game</h2>
-                </div> */}
               </>
             )}
           </div>

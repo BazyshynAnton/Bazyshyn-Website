@@ -14,9 +14,9 @@ import styles from "styles/homePage/introduceContainer/WebDev.module.css"
 
 export default function WebDev() {
   return (
-    <div className={styles.webInformationContainer}>
-      <div className={styles.webTechnology}>
-        <div className={styles.webTechnologyHeaderText}>
+    <div className={styles.web}>
+      <div className={styles.web__tech}>
+        <div className={styles.web__tech__header}>
           <h3>Front-End Developer</h3>
           <p>
             Hi, I'm Anton Bazyshyn.
@@ -24,53 +24,53 @@ export default function WebDev() {
             Balakliya, Ukraine.
           </p>
         </div>
-        <div className={styles.techStackContainer}>
+        <div className={styles.web__tech__stack}>
           <p>Tech Stack</p>
-          <div className={styles.iconsContainer}>
+          <div className={styles.icons}>
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={cssIcon}
               alt="css"
               title="CSS"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={htmlIcon}
               alt="html"
               title="HTML"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={jsIcon}
               alt="js"
               title="JavaScript"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={tsIcon}
               alt="ts"
               title="TypeScript"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={reactIcon}
               alt="react"
               title="React"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={nextjsIcon}
               alt="nextjs"
               title="Next.js"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={muiIcon}
               alt="mui"
               title="Material UI"
             />
             <LazyLoadImage
-              className={styles.iconsStyle}
+              className={styles.icons_style}
               src={sassIcon}
               alt="sass"
               title="SASS/SCSS"

@@ -1,4 +1,5 @@
 import Spin from "./Spin"
+
 import { useEffect, useState } from "utils/reactImports"
 import { LazyLoadImage } from "utils/lazyImports"
 
@@ -22,33 +23,28 @@ export default function AboutMeWeb() {
   })
 
   return (
-    <div className={styles.aboutMeWebContainer}>
-      <div className={styles.aboutMeWebHeaderContainer}>
+    <div className={styles.aboutMeWeb}>
+      <div className={styles.aboutMeWeb__header}>
         <h3>About Me</h3>
       </div>
-      <div className={styles.contentContainer}>
-        <div className={styles.imgContainer}>
+      <div className={styles.aboutMeWeb__content}>
+        <div className={styles.aboutMeWeb__content__img}>
           <LazyLoadImage src={macbookPic} alt="macbookPicture" />
           {isSmallScreen && <Spin />}
         </div>
-        <div className={styles.aboutMeText}>
+        <div className={styles.aboutMeWeb__content__text}>
           <h3>
             A React Front-end Developer with great enthusiasm from Balakliya,
             Ukraine.
           </h3>
           <p>
-            <br />I present myself as an ambitious front-end developer with 1.5
-            years of experience, ready to contribute to your projects.
-            <br /> I am prepared to contribute to your team, where
-            professionalism, collaborative work, and a commitment to
-            high-quality results are valued.
-          </p>
-          <p>
-            • Self-motivated and self-managing, with great organizational
-            skills.
-            <br />• High attention to detail, thoroughness, and organization.
-            <br />• Strong problem-solving and analytical skills. <br />• I
-            consider myself a well-rounded person with skills in multiple areas.
+            I am the Front-end developer with 1.5 years of non-commercial
+            experience who improves himself by investing 12 hours a day. Great
+            ambitions allow me to cope with the most difficult tasks and solve
+            complex problems. I put my heart and soul into all kinds of projects
+            and write code with great enthusiasm. I practice with my
+            pet-projects every day, which means that I have a great desire to
+            develop as a Front-end developer.
           </p>
         </div>
       </div>

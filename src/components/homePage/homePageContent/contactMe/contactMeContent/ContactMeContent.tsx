@@ -6,10 +6,10 @@ import styles from "styles/homePage/contactMe/contactMeContent/ContactMeContent.
 export default function ContactMeContent() {
   return (
     <>
-      <div className={styles.contactMeHeader}>
+      <div className={styles.contactMe__header}>
         <h3>Contact</h3>
       </div>
-      <div className={styles.contentContainer}>
+      <div className={styles.contactMe__content}>
         <ContactInfo />
         <ContactForm />
       </div>

@@ -7,7 +7,7 @@ const stylesForIcons = { fontSize: "2.2rem", color: "#147efb" }
 
 export default function ContactInfo() {
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactInfo}>
       <Info
         children={<IoMdMap style={stylesForIcons} />}
         infoName={"Location"}
@@ -37,7 +37,7 @@ function Info({ children, infoName, infoText, linkTo }: contactInfo) {
     <>
       {linkTo ? (
         <div className={styles.myInfo}>
-          <span className={styles.myInfoIcons}>{children}</span>
+          <span className={styles.myInfo__icons}>{children}</span>
           <a href={linkTo} target="blank">
             <div>
               <h3>{infoName}</h3>
@@ -47,7 +47,7 @@ function Info({ children, infoName, infoText, linkTo }: contactInfo) {
         </div>
       ) : (
         <div className={styles.myInfo}>
-          <span className={styles.myInfoIcons}>{children}</span>
+          <span className={styles.myInfo__icons}>{children}</span>
           <div>
             <h3>{infoName}</h3>
             <p>{infoText}</p>
